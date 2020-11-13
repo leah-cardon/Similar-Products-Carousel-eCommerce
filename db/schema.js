@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 // name db sethora-similar-products
 mongoose.connect(
-  'mongodb://localhost/test',
+  'mongodb://localhost/sethora-similar',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -64,10 +64,14 @@ const productSchema = new mongoose.Schema({
 
 
 
-const Product = mongoose.model('Product', productSchema);
+const Products = mongoose.model('Products', productSchema);
+
+const getAll = () => {
+  return Products.find().exec();
+};
 
 
 
 module.exports = {
-
+  getAll
 };
