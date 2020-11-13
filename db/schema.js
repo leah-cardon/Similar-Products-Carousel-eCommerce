@@ -60,10 +60,6 @@ const productSchema = new mongoose.Schema({
 
 });
 
-
-
-
-
 const Products = mongoose.model('Products', productSchema);
 
 const getAll = () => {
