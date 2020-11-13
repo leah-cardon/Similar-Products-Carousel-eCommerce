@@ -19,55 +19,52 @@ db.once('open', function() {
 
 // think about how to represent similar products
 const productSchema = new mongoose.Schema({
-  name: String
-
-  //   Products collection
-  // [
-  //   {
-  //     [
-  //   {
-  //     "product_id": Number,
-  //     "image_url": String,
-  //     "brand": String,
-  // 	"product_name": String,
-  // 	"product_url": String,
-  // 	"short_detail": String,
-  // 	"sizes": [ String ],
-  // 	"colors": [
-  // 				{
-  // 				  "name": String,
-  // 				  "description": String,
-  // 				  "image_url": String
-  // 				}
-  // 	          ],
-  //     "price": Number,
-  // 	"loves": Number,
-  // 	"stars": Number,
-  // 	"review_count": Number,
-  // 	"banners": [ String ],
-  // 	"tags": [ String ]
-  //   },
-
-  // Users collection
-
-  // [
-  //   {
-  //     "user_id": Number,
-  //     "loves": [ Number ]
-  //   }
-  // ]
-
-
+  'id': Number,
+  'product_id': Number,
+  'image_url': String,
+  'brand': String,
+  'product_name': String,
+  'product_url': String,
+  'short_detail': String,
+  'sizes': [ String ],
+  'colors': [
+    {
+      'name': String,
+      'description': String,
+      'image_url': String
+    }
+  ],
+  'price': Number,
+  'loves': Number,
+  'stars': Number,
+  'review_count': Number,
+  'banners': [ String ],
+  'tags': [ String ]
 });
+
+// Users collection
+
+// [
+//   {
+//     'user_id': Number,
+//     'loves': [ Number ]
+//   }
+// ]
+
+
 
 const Products = mongoose.model('Products', productSchema);
 
-const getAll = () => {
+const getAllProducts = () => {
   return Products.find().exec();
 };
 
+const insertAllProducts = (data) => {
+  Products.insertMany(data);
+};
 
 
 module.exports = {
-  getAll
+  getAllProducts,
+  insertAllProducts
 };
