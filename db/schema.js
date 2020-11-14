@@ -60,11 +60,11 @@ const getAllFromProducts = () => {
 };
 
 const insertAllIntoProducts = (data) => {
-  Products.insertMany(data);
+  return Products.insertMany(data);
 };
 
 const removeAllFromProducts = () => {
-  Products.deleteMany();
+  return Products.deleteMany();
 };
 
 module.exports = {

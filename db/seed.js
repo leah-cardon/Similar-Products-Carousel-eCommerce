@@ -57,6 +57,7 @@ const generateProducts = (quantity) => {
   return products;
 };
 
-db.removeAllFromProducts();
-
-db.insertAllIntoProducts(generateProducts(100));
+db.removeAllFromProducts().then(
+  () => {
+    db.insertAllIntoProducts(generateProducts(100));
+  });
