@@ -55,16 +55,20 @@ const productSchema = new mongoose.Schema({
 
 const Products = mongoose.model('Products', productSchema);
 
-const getAllProducts = () => {
+const getAllFromProducts = () => {
   return Products.find().exec();
 };
 
-const insertAllProducts = (data) => {
+const insertAllIntoProducts = (data) => {
   Products.insertMany(data);
 };
 
+const removeAllFromProducts = () => {
+  Products.deleteMany();
+};
 
 module.exports = {
-  getAllProducts,
-  insertAllProducts
+  getAllFromProducts,
+  insertAllIntoProducts,
+  removeAllFromProducts
 };
