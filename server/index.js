@@ -1,19 +1,21 @@
-
-
 const express = require('express');
+const db = require('../db/schema.js');
+const mongoose = require('mongoose');
 const app = express();
-const port = 4444;
+let port = 4444;
 
 // serve static files with express
 
-const database = require('../db/schema.js');
 
 
 // '/api/products/:id/similar'
 app.get('/api/products/similar', (req, res) => {
-
-  // database.products.find().exec().then();
-  res.send('Hello World!');
+  db.getAllFromProducts().then((products) => {
+    res.send(products);
+  }
+  ).catch((err) => {
+    res.status(404).send(err);
+  });
 });
 
 
