@@ -67,8 +67,13 @@ const removeAllFromProducts = () => {
   return Products.deleteMany();
 };
 
+const getOneProductInfo = (id) => {
+  return Products.find({'id': id}).exec();
+};
+
 module.exports = {
   getAllFromProducts,
   insertAllIntoProducts,
-  removeAllFromProducts
+  removeAllFromProducts,
+  getOneProductInfo
 };
