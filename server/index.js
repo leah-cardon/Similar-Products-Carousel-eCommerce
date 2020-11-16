@@ -20,7 +20,6 @@ app.get('/api/products/similar', (req, res) => {
 });
 
 //gets all info needed to display in the quicklook popup modal
-// GET /api/:id/quicklook
 app.get('/api/:id/quicklook', (req, res) => {
   db.getOneProductInfo(req.params.id).then((product) => {
     res.send(product);
