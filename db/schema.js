@@ -19,8 +19,8 @@ db.once('open', function() {
 
 // think about how to represent similar products
 const productSchema = new mongoose.Schema({
-  'id': Number,
-  'product_id': Number,
+  'id': {type: Number, unique: true},
+  'product_id': {type: Number, unique: true},
   'image_url': String,
   'brand': String,
   'product_name': String,

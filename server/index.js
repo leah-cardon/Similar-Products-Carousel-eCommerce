@@ -10,7 +10,7 @@ let port = 4444;
 
 // '/api/products/:id/similar'
 app.get('/api/products/similar', (req, res) => {
-  db.getAllFromCollection('Products').then((products) => {
+  db.getAllFromProducts().then((products) => {
     res.send(products);
   }
   ).catch((err) => {
