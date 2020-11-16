@@ -30,6 +30,7 @@ app.get('/api/:id/quicklook', (req, res) => {
 });
 
 
+
 // Add product to user's "Loves" list (favorites) (disregard complexity of users for now - just add a 'shopping list' table and join with products table?)
 // app.post('/api/shopping_list', (req, res) => {
 //   db.addToLoves(//req.body.id)
