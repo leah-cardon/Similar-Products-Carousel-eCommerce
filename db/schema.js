@@ -35,6 +35,7 @@ const productSchema = new mongoose.Schema({
     }
   ],
   'price': Number,
+  // add loved???? random bool?
   'loves': Number,
   'stars': Number,
   'review_count': Number,
@@ -70,6 +71,11 @@ const removeAllFromProducts = () => {
 const getOneProductInfo = (id) => {
   return Products.find({'id': id}).exec();
 };
+
+// const addToLoves = (product) => {
+
+// };
+
 
 module.exports = {
   getAllFromProducts,

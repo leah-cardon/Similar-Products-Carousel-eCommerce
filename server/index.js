@@ -9,91 +9,42 @@ let port = 4444;
 
 
 // gets all info for similar products carousel from that id's related products
-// change to '/api/products/:id/similar'
+// change to '/api/products/:id/similar' and refactor db to have similar linked to each id, and also add get all similar function or refactor getAllFromProducts to take params and get similar instead of the entire db
 app.get('/api/products/similar', (req, res) => {
-  db.getAllFromProducts().then((products) => {
-    res.send(products);
-  }
-  ).catch((err) => {
-    res.status(404).send(err);
-  });
+  db.getAllFromProducts()
+    .then((products) => {
+      res.send(products);
+    }).catch((err) => {
+      res.status(404).send(err);
+    });
 });
 
 //gets all info needed to display in the quicklook popup modal
 app.get('/api/:id/quicklook', (req, res) => {
-  db.getOneProductInfo(req.params.id).then((product) => {
-    res.send(product);
-  }
-  ).catch((err) => {
-    res.status(404).send(err);
-  });
+  db.getOneProductInfo(req.params.id)
+    .then((product) => {
+      res.send(product);
+    }).catch((err) => {
+      res.status(404).send(err);
+    });
 });
 
 
-// Parameters
-
-// product_id: integer
-// * The ID is used to determine whether the current listing is already in the user’s favorites 
-
-// user_id: integer (optional)
-// * Can also be implemented with any other unique attribute instead of user_id, e.g. username, email 
-// If no user_id was passed, favorite is null for all products.
-
-
-// Returns
-// All information about the clicked product that is needed to display in the Quick Look modal.
-
-// [
-//   {
-//     "product_id": "1925965",
-//     "image_url": "http://some.fake.url/photo1.png",
-//     "brand": "FENTY BEAUTY by Rihanna",
-//     "product_name": "Gloss Bomb Universal Lip Luminizer",
-//     "product_url": "that product's page url",
-//     "short_detail": "An ultimate, gotta-have-it lip gloss with explosive shine that feels as good as it looks.",
-//     "sizes": [
-// "0.30 oz/9 mL"
-// 	     ],
-//     "colors": [
-// 	{
-// 	    "name": "Fenty Glow",
-// 	    "description": "shimmering rose nude",
-// 	    "image_url": "some_url"
-// 	},
-// 	{
-// 	    "name": "Glass Slipper",
-// 	    "description": "clear",
-// 	    "image_url": "some_url"
-// }
-//     ],
-//     "price": "19",
-//     "loved": "true",
-//     "loves": "656400",
-//     "stars": "4.3",
-//     "review_count": "10900",
-//     "tags": ["exclusive", "new", "sold out", "limited edition", "online only"]
-//   }
-// ]
-
-// Status codes
-// * 200: Successfully retrieved info about product for Quick Look
-// * 404: Unsuccessful attempt due to missing resource 
-
-
-// Add product to user's "Loves" list (favorites)
-
-// POST /api/shopping_list
-// (the loves list goes to /shopping_list on actual Sephora.com)
+// Add product to user's "Loves" list (favorites) (disregard complexity of users for now - just add a 'shopping list' table and join with products table?)
+// app.post('/api/shopping_list', (req, res) => {
+//   db.addToLoves(//req.body.id)
+//     .then((product) => {
+//       res.send(product);
+//     }).catch((err) => {
+//       res.status(404).send(err);
+//     });
+// });
 
 // Parameters
 
-// product_id: integer
+// id of product: integer
 // * Required 
 // * The id of the "loved" product
-
-// user_id: integer
-// * Required
-// * The id of the current user, to add to their "Loves" list
 
 
 // Returns
