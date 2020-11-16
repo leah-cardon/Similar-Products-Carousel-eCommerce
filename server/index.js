@@ -14,8 +14,7 @@ app.get('/api/products/similar', (req, res) => {
     res.send(products);
   }
   ).catch((err) => {
-    // set err headers???
-    res.send(err);
+    res.status(404).send(err);
   });
 });
 

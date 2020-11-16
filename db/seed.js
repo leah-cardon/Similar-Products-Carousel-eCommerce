@@ -47,13 +47,8 @@ const generateProducts = (quantity) => {
       'banners': getRandomLengthFakerArray(4, faker.lorem.word),
       'tags': getRandomLengthFakerArray(3, faker.lorem.word)
     };
-
     products.push(product);
-
   }
-
-  console.log('SEEDED DB, here are some example products: ', JSON.stringify(products.slice(0, 5)));
-  console.log('verifying length of fake data: ' + products.length + ' records');
   return products;
 };
 
