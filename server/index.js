@@ -1,12 +1,11 @@
+const path = require('path');
 const express = require('express');
 const db = require('../db/schema.js');
 const mongoose = require('mongoose');
 const app = express();
 let port = 4444;
 
-// serve static files with express
-
-
+app.use(express.static(path.join(__dirname, '/../public')));
 
 // gets all info for similar products carousel from that id's related products
 // change to '/api/products/:id/similar' and refactor db to have similar linked to each id, and also add get all similar function or refactor getAllFromProducts to take params and get similar instead of the entire db
