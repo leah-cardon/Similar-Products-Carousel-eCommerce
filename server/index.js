@@ -5,6 +5,7 @@ const app = express();
 let port = 4444;
 
 // serve static files with express
+app.use(express.static(__dirname + '/../public'));
 
 
 
