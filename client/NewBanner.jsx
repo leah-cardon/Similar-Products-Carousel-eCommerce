@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const NewBanner = (props) => {
 
   return (
-    <div></div>
+    <div>if new exists, will display new banner at top left of photo (separate into its own new property?)</div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default NewBanner;
