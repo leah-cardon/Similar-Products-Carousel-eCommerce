@@ -1,11 +1,9 @@
 import React from 'react';
-import LineBreak from './LineBreak.jsx';
 
 const SuggestedProductsHeader = (props) => {
 
   return (
     <div>
-      <LineBreak />
       <span>
         Similar Products
       </span>

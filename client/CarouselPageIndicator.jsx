@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const CarouselPageIndicator = (props) => {
 
   return (
-    <div></div>
+    <div>carousel page indicator (dots)</div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default CarouselPageIndicator;

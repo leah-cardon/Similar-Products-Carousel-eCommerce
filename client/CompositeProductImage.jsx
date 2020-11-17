@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const CompositeProductImage = (props) => {
 
   return (
-    <div></div>
+    <div>composite product image</div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default CompositeProductImage;

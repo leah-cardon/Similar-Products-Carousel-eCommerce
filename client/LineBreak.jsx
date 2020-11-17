@@ -3,7 +3,7 @@ import React from 'react';
 const LineBreak = (props) => {
 
   return (
-    <div></div>
+    <div>line goes here</div>
   );
 
 };

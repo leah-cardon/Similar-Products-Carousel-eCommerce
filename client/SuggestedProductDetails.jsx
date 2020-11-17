@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const SuggestedProductDetails = (props) => {
 
   return (
-    <div></div>
+    <div>suggested product details</div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default SuggestedProductDetails;
