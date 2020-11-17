@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const SuggestedProductsCarousel = (props) => {
 
   return (
-    <div></div>
+    <div>SuggestedProductsCarousel</div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default SuggestedProductsCarousel;
