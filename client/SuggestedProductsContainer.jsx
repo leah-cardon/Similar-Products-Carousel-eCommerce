@@ -1,7 +1,16 @@
 import React from 'react';
+import SuggestedProductsHeader from './SuggestedProductsHeader.jsx';
+import SuggestedProductsCarousel from './SuggestedProductsCarousel.jsx';
+import SuggestedProductsFooter from './SuggestedProductsFooter.jsx';
 
 const SuggestedProductsContainer = (props) => {
-  return (<div>'suggested products container'</div>);
+  return (
+    <div>
+      <SuggestedProductsHeader />
+      <SuggestedProductsCarousel />
+      <SuggestedProductsFooter />
+    </div>
+  );
 };
 
 
