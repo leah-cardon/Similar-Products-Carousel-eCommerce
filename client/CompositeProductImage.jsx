@@ -1,11 +1,19 @@
 import React from 'react';
+import NewBanner from './NewBanner.jsx';
+import Banner from './Banner.jsx';
+import ProductPhoto from './ProductPhoto.jsx';
 
-const FILL_ME_IN = (props) => {
+const CompositeProductImage = (props) => {
 
   return (
-    <div></div>
+    <div>
+      composite product image
+      {/* conditional rendering of newbanner over the top of productphoto, if product is new */}
+      <NewBanner />
+      <ProductPhoto />
+    </div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default CompositeProductImage;

@@ -1,9 +1,12 @@
 import React from 'react';
+import LineBreak from './LineBreak.jsx';
 
 const SuggestedProductsFooter = (props) => {
 
   return (
-    <div>SuggestedProductsFooter</div>
+    <div>
+      <LineBreak />
+    </div>
   );
 
 };

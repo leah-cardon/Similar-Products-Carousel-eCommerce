@@ -1,11 +1,11 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const LineBreak = (props) => {
 
   return (
-    <div></div>
+    <div>line goes here</div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default LineBreak;
