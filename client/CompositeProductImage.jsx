@@ -1,6 +1,5 @@
 import React from 'react';
 import NewBanner from './NewBanner.jsx';
-import Banner from './Banner.jsx';
 import ProductPhoto from './ProductPhoto.jsx';
 
 const CompositeProductImage = (props) => {
