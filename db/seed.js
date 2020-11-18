@@ -13,8 +13,8 @@ const getRandomLengthFakerArray = (limit, fakerProp) => {
 
 const getRandomImage = (imageType) => {
 
-  const imageURLs = [
-    {productImage: [
+  const imageURLs = {
+    'productImage': [
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/1.webp',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/2.webp',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/3.webp',
@@ -45,8 +45,8 @@ const getRandomImage = (imageType) => {
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/28.webp',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/29.webp',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/30.webp'
-    ]},
-    {colorSwatch: [
+    ],
+    'colorSwatch': [
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/a.jpg',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/b.jpg',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/c.jpg',
@@ -57,8 +57,8 @@ const getRandomImage = (imageType) => {
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/h.jpg',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/i.jpg',
       'https://fec-sephora-images.s3-us-west-1.amazonaws.com/j.jpg'
-    ]}
-  ];
+    ]
+  };
 
   var randomIndex = Math.floor(Math.random() * imageURLs[imageType].length - 1);
   return imageURLs[imageType][randomIndex];
@@ -71,7 +71,7 @@ var generateRandomLengthColorArray = (limit) => {
     arrOfColors.push(
       {
         'name': faker.commerce.color(),
-        'image_url': getRandomImage(colorSwatch),
+        'image_url': getRandomImage('colorSwatch'),
         'description': faker.commerce.productAdjective()
       }
     );
@@ -89,7 +89,7 @@ const generateProducts = (quantity) => {
       'id': i,
       'product_id': faker.random.number(),
       // REPLACE ME!
-      'image_url': getRandomImage(productImage),
+      'image_url': getRandomImage('productImage'),
       'brand': faker.company.companyName(),
       'product_name': faker.commerce.productName(),
       // FIGURE OUT HOW TO DO THIS (COMPOSE A URL FROM SEPHORA AND PRODUCT ID?)
