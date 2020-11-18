@@ -21,7 +21,7 @@ class App extends React.Component {
     axios.get('/api/products/similar')
       .then((products) => {
         this.setState({
-          similarProducts: products
+          similarProducts: products.data
         });
         console.log('products in state: ', this.state.similarProducts);
       })
@@ -29,7 +29,11 @@ class App extends React.Component {
   }
 
   render() {
-    return <div><SuggestedProductsContainer /></div>;
+    return <div>
+      <SuggestedProductsContainer
+        similarProducts={this.state.similarProducts}
+      />
+    </div>;
   }
 
 }
