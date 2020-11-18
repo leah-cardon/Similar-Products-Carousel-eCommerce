@@ -8,10 +8,9 @@ const CompositeProductImage = (props) => {
   return (
     <div>
       composite product image
-      {/* conditional rendering of newbanner and banner over the top of productphoto */}
+      {/* conditional rendering of newbanner over the top of productphoto, if product is new */}
       <NewBanner />
       <ProductPhoto />
-      <Banner />
     </div>
   );
 
