@@ -17,11 +17,14 @@ const SuggestedProductsCarousel = (props) => {
 
 
   return (
-    <div>
-      SuggestedProductsCarousel
+    <div className='suggestedProductsCarousel'>
       {/* display only 5 at a time depending on what page you're on (page indicator state value) */}
-      {/* {suggestedProducts} */}
+      {/* {suggestedProducts} (remove hardcoding) */}
       <SuggestedProduct similarProduct={props.similarProducts[0]} />
+      <SuggestedProduct similarProduct={props.similarProducts[1]} />
+      <SuggestedProduct similarProduct={props.similarProducts[2]} />
+      <SuggestedProduct similarProduct={props.similarProducts[3]} />
+      <SuggestedProduct similarProduct={props.similarProducts[4]} />
       <CarouselPageIndicator />
     </div>
   );

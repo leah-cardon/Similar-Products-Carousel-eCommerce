@@ -4,7 +4,7 @@ const ProductPhoto = (props) => {
 
   return (
     <div>
-      <img src={props.image}></img>
+      <img src={props.image} className='productPhoto'></img>
     </div>
   );
 
