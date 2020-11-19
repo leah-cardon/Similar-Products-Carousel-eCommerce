@@ -47,6 +47,7 @@ class App extends React.Component {
       <SuggestedProductsContainer
         similarProducts={this.state.similarProducts}
         handleArrowClick={this.handleArrowClick}
+        similarPage={this.state.similarPage}
       />
       {/* you may also like container */}
     </div>;

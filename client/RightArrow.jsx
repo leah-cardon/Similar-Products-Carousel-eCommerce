@@ -7,6 +7,7 @@ const RightArrow = (props) => {
       <button
         onClick={props.handleArrowClick}
         name="rightArrow"
+        disabled={props.similarPage >= 3}
         // if on page three, make this button disabled (different style?)
       >
         Right

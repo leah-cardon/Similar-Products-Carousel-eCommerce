@@ -10,6 +10,7 @@ const SuggestedProductsContainer = (props) => {
       <SuggestedProductsCarousel
         similarProducts={props.similarProducts}
         handleArrowClick={props.handleArrowClick}
+        similarPage={props.similarPage}
       />
       <SuggestedProductsFooter />
     </div>

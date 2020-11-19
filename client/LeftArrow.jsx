@@ -7,7 +7,7 @@ const LeftArrow = (props) => {
       <button
         onClick={props.handleArrowClick}
         name="leftArrow"
-        // if on page one, make this button disabled (different style?)
+        disabled={props.similarPage <= 1}
       >
         Left
       </button>
