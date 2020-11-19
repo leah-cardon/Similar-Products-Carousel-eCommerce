@@ -11,13 +11,20 @@ const SuggestedProductsCarousel = (props) => {
   //     key={index}
   //   />
   // });
+  if (props.similarProducts.length === 0) {
+    return null;
+  }
+
 
   return (
-    <div>
-      SuggestedProductsCarousel
+    <div className='suggestedProductsCarousel'>
       {/* display only 5 at a time depending on what page you're on (page indicator state value) */}
-      {/* {suggestedProducts} */}
-      <SuggestedProduct />
+      {/* {suggestedProducts} (remove hardcoding) */}
+      <SuggestedProduct similarProduct={props.similarProducts[0]} />
+      <SuggestedProduct similarProduct={props.similarProducts[1]} />
+      <SuggestedProduct similarProduct={props.similarProducts[2]} />
+      <SuggestedProduct similarProduct={props.similarProducts[3]} />
+      <SuggestedProduct similarProduct={props.similarProducts[4]} />
       <CarouselPageIndicator />
     </div>
   );

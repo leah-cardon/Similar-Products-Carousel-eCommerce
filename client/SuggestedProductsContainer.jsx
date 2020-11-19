@@ -7,7 +7,7 @@ const SuggestedProductsContainer = (props) => {
   return (
     <div>
       <SuggestedProductsHeader />
-      <SuggestedProductsCarousel />
+      <SuggestedProductsCarousel similarProducts={props.similarProducts} />
       <SuggestedProductsFooter />
     </div>
   );

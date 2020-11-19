@@ -1,3 +1,13 @@
 div {
   padding: 1em;
 }
+
+.suggestedProductsCarousel {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.productPhoto {
+  height: 135px;
+  width: 135px;
+}
