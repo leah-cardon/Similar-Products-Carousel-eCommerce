@@ -12,9 +12,12 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      similarProducts: []
+      similarProducts: [],
+      currentPageSimilarProducts: 1,
+      currentPageYouMayAlsoLike: 1
     };
-    // bind methods here
+
+    this.handleCarouselClick = this.handleCarouselClick.bind(this);
   }
 
   componentDidMount () {
@@ -28,11 +31,17 @@ class App extends React.Component {
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
 
+  handleCarouselClick (event) {
+    console.log('name of clicked carousel arrow button: ', event.target.name);
+  }
+
   render() {
     return <div>
       <SuggestedProductsContainer
         similarProducts={this.state.similarProducts}
+        handleCarouselClick={this.handleCarouselClick}
       />
+      {/* you may also like container */}
     </div>;
   }
 
