@@ -13,8 +13,8 @@ class App extends React.Component {
 
     this.state = {
       similarProducts: [],
-      currentPageSimilarProducts: 1,
-      currentPageYouMayAlsoLike: 1
+      similarPage: 1,
+      youMayLikePage: 1
     };
 
     this.handleArrowClick = this.handleArrowClick.bind(this);
@@ -31,8 +31,15 @@ class App extends React.Component {
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
 
+  // make this reusable between both carousels
   handleArrowClick (event) {
-    console.log('name of clicked carousel arrow button: ', event.target.name);
+    var clicked = event.target.name;
+    this.setState(prevState => {
+      return {
+        similarPage:
+        clicked === 'leftArrow' ? prevState.similarPage - 1 : prevState.similarPage + 1};
+    });
+    console.log('new page: ', this.state.similarPage);
   }
 
   render() {
