@@ -9,8 +9,8 @@ const SuggestedProductDetails = (props) => {
   });
 
   return (
-    <div>
-      <div className='productHeader'>
+    <div className='productDetails'>
+      <div>
         <p class='brandName'>
           {props.details.brand}
         </p>
@@ -18,7 +18,7 @@ const SuggestedProductDetails = (props) => {
           {props.details.product_name}
         </p>
       </div>
-      <div>
+      <div className='price'>
         {formatter.format(props.details.price)}
       </div>
       <div>

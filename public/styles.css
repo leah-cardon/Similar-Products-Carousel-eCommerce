@@ -12,12 +12,16 @@ div {
   width: 135px;
 }
 
-.productHeader {
+.productDetails {
   font-family: 'Helvetica Neue';
   font-size: 15px;
   text-align: 'center';
 }
 
-.productHeader .brandName {
+.productDetails .brandName {
+  font-weight: 700;
+}
+
+.price {
   font-weight: 700;
 }
