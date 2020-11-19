@@ -26,9 +26,9 @@ class App extends React.Component {
     axios.get('/api/products/similar')
       .then((products) => {
         this.setState({
-          similarProducts: products.data
+          similarProducts: products.data,
+          similarDisplayed: products.data.slice(0, 5)
         });
-        console.log('products in state: ', this.state.similarProducts);
       })
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
@@ -57,13 +57,12 @@ class App extends React.Component {
         similarDisplayed: displayed
       };
     });
-    console.log('items in displayed state: ', this.state.similarDisplayed);
   }
 
   render() {
     return <div>
       <SuggestedProductsContainer
-        similarProducts={this.state.similarProducts}
+        similarDisplayed={this.state.similarDisplayed}
         handleArrowClick={this.handleArrowClick}
         similarPage={this.state.similarPage}
       />
