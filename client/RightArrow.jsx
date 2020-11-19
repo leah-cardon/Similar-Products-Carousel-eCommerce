@@ -1,11 +1,15 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const RightArrow = (props) => {
 
   return (
-    <div></div>
+    <div>
+      <button>
+        Right
+      </button>
+    </div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default RightArrow;
