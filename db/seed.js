@@ -98,9 +98,11 @@ const generateProducts = (quantity) => {
       'sizes': getRandomLengthFakerArray(4, faker.commerce.productAdjective),
       'colors': generateRandomLengthColorArray(5),
       'price': faker.commerce.price(),
+      'loved': false,
       'loves': faker.random.number(),
       'stars': faker.random.number(),
       'review_count': faker.random.number(),
+      'average_rating': Math.round(Math.random() * 10) / 10,
       'banners': getRandomLengthFakerArray(4, faker.lorem.word),
       'tags': getRandomLengthFakerArray(3, faker.lorem.word)
     };
