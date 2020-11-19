@@ -1,5 +1,5 @@
 div {
-  padding: 1em;
+  padding: .5em;
 }
 
 .suggestedProductsCarousel {
@@ -10,4 +10,14 @@ div {
 .productPhoto {
   height: 135px;
   width: 135px;
+}
+
+.productHeader {
+  font-family: 'Helvetica Neue';
+  font-size: 15px;
+  text-align: 'center';
+}
+
+.productHeader .brandName {
+  font-weight: 700;
 }
