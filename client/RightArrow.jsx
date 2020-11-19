@@ -4,7 +4,7 @@ const RightArrow = (props) => {
 
   return (
     <div>
-      <button>
+      <button onClick={props.handleArrowClick}>
         Right
       </button>
     </div>

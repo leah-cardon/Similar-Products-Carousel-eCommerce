@@ -17,7 +17,7 @@ class App extends React.Component {
       currentPageYouMayAlsoLike: 1
     };
 
-    this.handleCarouselClick = this.handleCarouselClick.bind(this);
+    this.handleArrowClick = this.handleArrowClick.bind(this);
   }
 
   componentDidMount () {
@@ -31,7 +31,7 @@ class App extends React.Component {
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
 
-  handleCarouselClick (event) {
+  handleArrowClick (event) {
     console.log('name of clicked carousel arrow button: ', event.target.name);
   }
 
@@ -39,7 +39,7 @@ class App extends React.Component {
     return <div>
       <SuggestedProductsContainer
         similarProducts={this.state.similarProducts}
-        handleCarouselClick={this.handleCarouselClick}
+        handleArrowClick={this.handleArrowClick}
       />
       {/* you may also like container */}
     </div>;
