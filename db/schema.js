@@ -35,10 +35,11 @@ const productSchema = new mongoose.Schema({
     }
   ],
   'price': Number,
-  // add loved???? random bool?
+  'loved': Boolean,
   'loves': Number,
   'stars': Number,
   'review_count': Number,
+  'average_rating': Number,
   'banners': [ String ],
   'tags': [ String ]
 });
