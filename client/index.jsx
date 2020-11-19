@@ -39,7 +39,7 @@ class App extends React.Component {
     const ranges = {
       '1': [0, 5],
       '2': [5, 10],
-      '3': [10, 14]
+      '3': [10, 15]
     };
     const pageTurner = (eventName) => {
       if (eventName === 'leftArrow') {
