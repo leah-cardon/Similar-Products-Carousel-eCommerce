@@ -102,7 +102,7 @@ const generateProducts = (quantity) => {
       'loves': faker.random.number(),
       'stars': faker.random.number(),
       'review_count': faker.random.number(),
-      'average_rating': Math.round(Math.random() * 10) / 10,
+      'average_rating': Math.round(Math.random() * 50) / 10,
       'banners': getRandomLengthFakerArray(4, faker.lorem.word),
       'tags': getRandomLengthFakerArray(3, faker.lorem.word)
     };
