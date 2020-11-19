@@ -13,6 +13,8 @@ class App extends React.Component {
 
     this.state = {
       similarProducts: [],
+      // the 5 shown on the current page
+      similarDisplayed: [],
       similarPage: 1,
       youMayLikePage: 1
     };
@@ -33,13 +35,29 @@ class App extends React.Component {
 
   // make this reusable between both carousels
   handleArrowClick (event) {
-    var clicked = event.target.name;
+    const clicked = event.target.name;
+    const ranges = {
+      '1': [0, 5],
+      '2': [5, 10],
+      '3': [10, 14]
+    };
+    const pageTurner = (eventName) => {
+      if (eventName === 'leftArrow') {
+        return this.state.similarPage - 1;
+      } else {
+        return this.state.similarPage + 1;
+      }
+    };
+    const newPage = pageTurner(clicked);
+    const displayed = this.state.similarProducts.slice(...ranges[newPage]);
+
     this.setState(prevState => {
       return {
-        similarPage:
-        clicked === 'leftArrow' ? prevState.similarPage - 1 : prevState.similarPage + 1};
+        similarPage: newPage,
+        similarDisplayed: displayed
+      };
     });
-    console.log('new page: ', this.state.similarPage);
+    console.log('items in displayed state: ', this.state.similarDisplayed);
   }
 
   render() {
