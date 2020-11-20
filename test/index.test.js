@@ -2,7 +2,7 @@
  * @jest-environment node
  */
 
-const server = require('./index.js');
+const server = require('../server/index.js');
 const supertest = require('supertest');
 const request = supertest(server);
 

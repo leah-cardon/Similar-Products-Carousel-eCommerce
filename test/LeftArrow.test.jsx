@@ -6,7 +6,7 @@ import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 
-import LeftArrow from '../LeftArrow.jsx';
+import LeftArrow from '../client/LeftArrow.jsx';
 
 let container = null;
 beforeEach(() => {
