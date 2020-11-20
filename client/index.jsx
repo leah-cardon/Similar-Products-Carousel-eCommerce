@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   componentDidMount () {
-    axios.get('/api/products/similar')
+    axios.get('/api/products/1/similar')
       .then((products) => {
         this.setState({
           similarProducts: products.data,

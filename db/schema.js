@@ -41,7 +41,9 @@ const productSchema = new mongoose.Schema({
   'review_count': Number,
   'average_rating': Number,
   'banners': [ String ],
-  'tags': [ String ]
+  'tags': [ String ],
+  'similar': [ Number ],
+  'you_may_like': [ Number ]
 });
 
 // Users collection
@@ -57,8 +59,17 @@ const productSchema = new mongoose.Schema({
 
 const Products = mongoose.model('Products', productSchema);
 
-const getAllFromProducts = () => {
-  return Products.find().exec();
+const getOneProductInfo = (id) => {
+  return Products.find({'id': id}).exec();
+};
+
+const getSuggestedProducts = (productId, type) => {
+  const suggestedIds = getOneProductInfo(productId);
+  console.log('productinfo: ', suggestedIds);
+  return Products.find()
+    .where('id')
+    .in(productId.type)
+    .exec();
 };
 
 const insertAllIntoProducts = (data) => {
@@ -69,9 +80,6 @@ const removeAllFromProducts = () => {
   return Products.deleteMany();
 };
 
-const getOneProductInfo = (id) => {
-  return Products.find({'id': id}).exec();
-};
 
 // const addToLoves = (product) => {
 
@@ -79,7 +87,7 @@ const getOneProductInfo = (id) => {
 
 
 module.exports = {
-  getAllFromProducts,
+  getSuggestedProducts,
   insertAllIntoProducts,
   removeAllFromProducts,
   getOneProductInfo
