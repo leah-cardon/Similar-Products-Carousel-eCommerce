@@ -1,5 +1,8 @@
 const server = require('./index.js');
+const supertest = require('supertest');
+const request = supertest(app);
 
-test('tests 0 === 0', () => {
-  expect(0).toBe(0);
+it('async test', async done => {
+  // async tests here
+  done();
 });
