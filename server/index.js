@@ -9,20 +9,10 @@ app.use(express.static(path.join(__dirname, '/../public')));
 
 // gets all info for similar products carousel from that id's related products
 // change to '/api/products/:id/similar' and refactor db to have similar linked to each id, and also add get all similar function or refactor getAllFromProducts to take params and get similar instead of the entire db (only 15 products at a time)
-app.get('/api/products/similar', (req, res) => {
+app.get('/api/products/:id/similar', (req, res) => {
   db.getAllFromProducts()
     .then((products) => {
       res.send(products);
-    }).catch((err) => {
-      res.status(404).send(err);
-    });
-});
-
-//gets all info needed to display in the quicklook popup modal
-app.get('/api/:id/quicklook', (req, res) => {
-  db.getOneProductInfo(req.params.id)
-    .then((product) => {
-      res.send(product);
     }).catch((err) => {
       res.status(404).send(err);
     });
