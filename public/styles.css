@@ -1,13 +1,27 @@
 div {
-  padding: 1em;
+  padding: .5em;
 }
 
 .suggestedProductsCarousel {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
 }
 
 .productPhoto {
   height: 135px;
   width: 135px;
+}
+
+.productDetails {
+  font-family: 'Helvetica Neue';
+  font-size: 15px;
+  text-align: 'center';
+}
+
+.productDetails .brandName {
+  font-weight: 700;
+}
+
+.price {
+  font-weight: 700;
 }

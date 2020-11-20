@@ -1,11 +1,19 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const LeftArrow = (props) => {
 
   return (
-    <div></div>
+    <div>
+      <button
+        onClick={props.handleArrowClick}
+        name="leftArrow"
+        disabled={props.similarPage <= 1}
+      >
+        Left
+      </button>
+    </div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default LeftArrow;

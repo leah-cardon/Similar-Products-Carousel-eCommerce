@@ -1,11 +1,20 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const RightArrow = (props) => {
 
   return (
-    <div></div>
+    <div>
+      <button
+        onClick={props.handleArrowClick}
+        name="rightArrow"
+        disabled={props.similarPage >= 3}
+        // if on page three, make this button disabled (different style?)
+      >
+        Right
+      </button>
+    </div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default RightArrow;

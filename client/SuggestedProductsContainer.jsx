@@ -7,7 +7,11 @@ const SuggestedProductsContainer = (props) => {
   return (
     <div>
       <SuggestedProductsHeader />
-      <SuggestedProductsCarousel similarProducts={props.similarProducts} />
+      <SuggestedProductsCarousel
+        similarDisplayed={props.similarDisplayed}
+        handleArrowClick={props.handleArrowClick}
+        similarPage={props.similarPage}
+      />
       <SuggestedProductsFooter />
     </div>
   );

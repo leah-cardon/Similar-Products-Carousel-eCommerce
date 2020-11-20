@@ -7,8 +7,8 @@ const SuggestedProduct = (props) => {
     'brand': props.similarProduct.brand,
     'product_name': props.similarProduct.product_name,
     'price': props.similarProduct.price,
-    // something for the review stars??
-    'stars': props.similarProduct.stars
+    'stars': props.similarProduct.average_rating,
+    'reviews': props.similarProduct.review_count
   };
 
   return (
