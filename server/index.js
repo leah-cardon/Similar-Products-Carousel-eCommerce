@@ -86,15 +86,4 @@ app.get('/api/:id/quicklook', (req, res) => {
 // * 400: Unsuccessful attempt at adding product to cart
 
 
-
-
-
-
-
-
-
-
-
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
-});
+module.exports = app;
