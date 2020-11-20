@@ -7,6 +7,7 @@ const LeftArrow = (props) => {
       <button
         onClick={props.handleArrowClick}
         name="leftArrow"
+        data-testid="leftArrow"
         disabled={props.similarPage <= 1}
       >
         Left
