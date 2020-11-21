@@ -66,7 +66,6 @@ const getOneProductInfo = (id) => {
 const getSuggestedProducts = (productId, type) => {
   return Products.find({'id': [productId]})
     .then(currentProduct => {
-      console.log('currentProduct at similar: ', currentProduct[0]['similar']);
       return Products.find({ id: { $in: currentProduct[0][type]}});
     })
     .catch((err) => {
