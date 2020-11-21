@@ -13,7 +13,6 @@ const SuggestedProduct = (props) => {
 
   return (
     <div>
-      'suggested product'
       <CompositeProductImage product={props.similarProduct} />
       <SuggestedProductDetails details={details} />
     </div>);
