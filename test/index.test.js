@@ -9,7 +9,7 @@ const request = supertest(server);
 it('gets all similar products', async done => {
   // async tests here
   // change to '/api/products/:id/similar'
-  const response = await request.get('/api/products/similar');
+  const response = await request.get('/api/products/:id/similar');
   expect(response.status).toBe(200);
   expect(response.body.length).toBe(100);
   done();

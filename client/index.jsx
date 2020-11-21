@@ -23,7 +23,9 @@ class App extends React.Component {
   }
 
   componentDidMount () {
-    axios.get('/api/products/1/similar')
+    var path = window.location.pathname.split('/');
+    var id = [3];
+    axios.get(`/api/products/${id}/similar`)
       .then((products) => {
         this.setState({
           similarProducts: products.data,

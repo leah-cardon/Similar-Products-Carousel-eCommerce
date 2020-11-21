@@ -64,12 +64,14 @@ const getOneProductInfo = (id) => {
 };
 
 const getSuggestedProducts = (productId, type) => {
-  const suggestedIds = getOneProductInfo(productId);
-  console.log('productinfo: ', suggestedIds);
-  return Products.find()
-    .where('id')
-    .in(productId.type)
-    .exec();
+  return Products.find({'id': [productId]})
+    .then(currentProduct => {
+      console.log('currentProduct: ', currentProduct);
+      return Products.find({ id: { $in: currentProduct[type]}});
+    })
+    .catch((err) => {
+      console.log('error in getSuggestedProducts: ', err);
+    });
 };
 
 const insertAllIntoProducts = (data) => {

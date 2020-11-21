@@ -96,7 +96,6 @@ const generateProducts = (quantity) => {
     const product = {
       'id': i,
       'product_id': faker.random.number(),
-      // REPLACE ME!
       'image_url': getRandomImage('productImage'),
       'brand': faker.company.companyName(),
       'product_name': faker.commerce.productName(),
