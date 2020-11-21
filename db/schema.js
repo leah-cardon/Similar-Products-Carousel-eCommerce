@@ -40,7 +40,7 @@ const productSchema = new mongoose.Schema({
   'stars': Number,
   'review_count': Number,
   'average_rating': Number,
-  'banners': [ String ],
+  'new': Boolean,
   'tags': [ String ],
   'similar': [ Number ],
   'you_may_like': [ Number ]
