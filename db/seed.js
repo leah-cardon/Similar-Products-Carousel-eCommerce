@@ -79,6 +79,14 @@ var generateRandomLengthColorArray = (limit) => {
   return arrOfColors;
 };
 
+const get15RandomIds = () => {
+  const ids = [];
+  for (var i = 0; i < 15; i++) {
+    ids.push(Math.ceil(Math.random() * 100));
+  }
+  return ids;
+};
+
 const generateProducts = (quantity) => {
 
   const products = [];
@@ -88,7 +96,6 @@ const generateProducts = (quantity) => {
     const product = {
       'id': i,
       'product_id': faker.random.number(),
-      // REPLACE ME!
       'image_url': getRandomImage('productImage'),
       'brand': faker.company.companyName(),
       'product_name': faker.commerce.productName(),
@@ -104,7 +111,9 @@ const generateProducts = (quantity) => {
       'review_count': faker.random.number(),
       'average_rating': Math.round(Math.random() * 50) / 10,
       'banners': getRandomLengthFakerArray(4, faker.lorem.word),
-      'tags': getRandomLengthFakerArray(3, faker.lorem.word)
+      'tags': getRandomLengthFakerArray(3, faker.lorem.word),
+      'similar': get15RandomIds(),
+      'you_may_like': get15RandomIds()
     };
     products.push(product);
   }
