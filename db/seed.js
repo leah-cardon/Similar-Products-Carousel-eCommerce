@@ -99,8 +99,6 @@ const generateProducts = (quantity) => {
       'image_url': getRandomImage('productImage'),
       'brand': faker.company.companyName(),
       'product_name': faker.commerce.productName(),
-      // FIGURE OUT HOW TO DO THIS (COMPOSE A URL FROM SEPHORA AND PRODUCT ID?)
-      // 'product_url': ,
       'short_detail': faker.lorem.sentence(),
       'sizes': getRandomLengthFakerArray(4, faker.commerce.productAdjective),
       'colors': generateRandomLengthColorArray(5),
