@@ -13,7 +13,6 @@ class App extends React.Component {
 
     this.state = {
       similarProducts: [],
-      // the 5 shown on the current page
       similarDisplayed: [],
       similarPage: 1,
       youMayLikePage: 1
@@ -27,14 +26,15 @@ class App extends React.Component {
     var id = [3];
     axios.get(`/api/products/${id}/similar`)
       .then((products) => {
+        console.log(`successful axios get request for product ${id}: `, products.data);
         this.setState({
           similarProducts: products.data,
           similarDisplayed: products.data.slice(0, 5)
         });
+        console.log(this.state.similarProducts);
       })
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
-
   // make this reusable between both carousels
   handleArrowClick (event) {
     const clicked = event.target.name;
