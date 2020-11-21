@@ -7,9 +7,8 @@ const CompositeProductImage = (props) => {
   return (
     <div>
       composite product image
-      {/* conditional rendering of newbanner over the top of productphoto, if product is new */}
-      <NewBanner />
-      <ProductPhoto image={props.image} />
+      <NewBanner new={props.product.new} />
+      <ProductPhoto image={props.product.image_url} />
     </div>
   );
 
