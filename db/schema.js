@@ -46,17 +46,6 @@ const productSchema = new mongoose.Schema({
   'you_may_like': [ Number ]
 });
 
-// Users collection
-
-// [
-//   {
-//     'user_id': Number,
-//     'loves': [ Number ]
-//   }
-// ]
-
-
-
 const Products = mongoose.model('Products', productSchema);
 
 const getOneProductInfo = (id) => {
@@ -80,11 +69,6 @@ const insertAllIntoProducts = (data) => {
 const removeAllFromProducts = () => {
   return Products.deleteMany();
 };
-
-
-// const addToLoves = (product) => {
-
-// };
 
 
 module.exports = {
