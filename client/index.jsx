@@ -23,10 +23,11 @@ class App extends React.Component {
 
   componentDidMount () {
     var path = window.location.pathname.split('/');
-    var id = [3];
+    //path[3] when you add to proxy, instead of [3]
+    var id = path[2];
     axios.get(`/api/products/${id}/similar`)
       .then((products) => {
-        console.log(`successful axios get request for product ${id}: `, products.data);
+        // console.log(`successful axios get request for product ${id}: `, products.data);
         this.setState({
           similarProducts: products.data,
           similarDisplayed: products.data.slice(0, 5)
@@ -74,4 +75,4 @@ class App extends React.Component {
 
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('suggested-products'));

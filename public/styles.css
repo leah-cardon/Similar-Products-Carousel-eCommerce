@@ -25,3 +25,14 @@ div {
 .price {
   font-weight: 700;
 }
+
+.new {
+  background-color: black;
+  position: absolute;
+  height: 15px;
+  width: 30.8438px;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
