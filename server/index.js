@@ -10,23 +10,25 @@ let port = 4444;
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(path.join(__dirname, '/../public')));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, '../public')));
 
 
 app.get('/api/products/:id/similar', (req, res) => {
-  db.getSuggestedProducts(req.params.id, 'similar')
+  const id = (req.params.id === undefined) ? 2 : req.params.id;
+  db.getSuggestedProducts(id, 'similar')
     .then((products) => {
-      res.send(products);
+      res.status(200).send(products);
     }).catch((err) => {
       res.status(404).send(err);
     });
 });
 
 app.get('/api/products/:id/youmayalsolike', (req, res) => {
-  db.getSuggestedProducts(req.params.id, 'you_may_like')
+  const id = (req.params.id === undefined) ? 2 : req.params.id;
+  db.getSuggestedProducts(id, 'you_may_like')
     .then((products) => {
-      res.send(products);
+      res.status(200).send(products);
     }).catch((err) => {
       res.status(404).send(err);
     });
@@ -47,7 +49,7 @@ app.get('/api/products/:id/youmayalsolike', (req, res) => {
 // Parameters
 
 // id of product: integer
-// * Required 
+// * Required
 // * The id of the "loved" product
 
 
@@ -66,7 +68,7 @@ app.get('/api/products/:id/youmayalsolike', (req, res) => {
 // Parameters
 
 // product_id: integer
-// * Required 
+// * Required
 // * The id of the "loved" product
 
 // size: string
