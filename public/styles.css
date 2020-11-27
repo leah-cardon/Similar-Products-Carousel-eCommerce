@@ -1,3 +1,23 @@
+* {
+  border-width: 0;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  align-items: normal;
+  min-width: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 div {
   padding: .5em;
 }
@@ -39,11 +59,11 @@ div {
 
 .quickLook {
   display: inline-block;
-  /* border-image: initial; */
+  border-image: initial;
   color: rgb(232, 230, 227);
   background-color: rgb(0, 0, 0);
-  /* cursor: pointer; */
-  /* position: absolute; */
+  cursor: pointer;
+  position: absolute;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -58,9 +78,13 @@ div {
   text-transform: uppercase;
   /* cursor: pointer; */
   border-radius: 0;
-  border-color: #736b5e;
+  /* border-color: #736b5e; */
 }
 
 #quickLookHover {
   background-color: red;
+}
+
+.compositeImage {
+  position: relative;
 }
