@@ -12,6 +12,7 @@
   text-decoration: none;
   align-items: normal;
   min-width: 0;
+  font-family: 'Helvetica Neue';
 }
 
 *, ::after, ::before {
