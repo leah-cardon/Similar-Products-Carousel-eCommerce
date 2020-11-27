@@ -24,12 +24,10 @@ class App extends React.Component {
 
   componentDidMount() {
     var path = window.location.pathname.split('/');
-    //path[3] when you add to proxy, instead of [3]
     var id = (path[2] === undefined) ? 2 : path[2];
     axios.get(`/api/products/${id}/similar`)
       .then((result) => result.data)
       .then(products => {
-        // console.log(`successful axios get request for product ${id}: `, products.data);
         this.setState({
           similarProducts: products,
           similarDisplayed: products.slice(0, 5)
@@ -37,8 +35,9 @@ class App extends React.Component {
       })
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
-  // make this reusable between both carousels
+
   handleArrowClick(event) {
+    console.log('clicked');
     const clicked = event.target.name;
     const ranges = {
       '1': [0, 5],
@@ -64,15 +63,15 @@ class App extends React.Component {
   }
 
   render() {
-    return <AppStyles>
-      <SuggestedProductsContainer
-        similarDisplayed={this.state.similarDisplayed}
-        handleArrowClick={this.handleArrowClick}
-        similarPage={this.state.similarPage}
-      />
-      {/* you may also like container */}
-    </AppStyles>;
-  }
+    return (
+      <AppStyles>
+        <SuggestedProductsContainer
+          similarDisplayed={this.state.similarDisplayed}
+          handleArrowClick={this.handleArrowClick}
+          similarPage={this.state.similarPage}
+        />
+      </AppStyles>
+    )};
 
 }
 

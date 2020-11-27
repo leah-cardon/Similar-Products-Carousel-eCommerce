@@ -9,7 +9,6 @@ const RightArrow = (props) => {
         name="rightArrow"
         data-testid="rightArrow"
         disabled={props.similarPage >= 3}
-        // if on page three, make this button disabled (different style?)
       >
         Right
       </button>
