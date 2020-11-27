@@ -6,7 +6,7 @@
   "author": "@leah-cardon",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon ./server",
+    "start": "nodemon ./server/index.js",
     "seed": "node db/seed.js",
     "build": "webpack --watch",
     "test": "jest",
