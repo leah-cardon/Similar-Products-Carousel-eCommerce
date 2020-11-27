@@ -1,11 +1,15 @@
 import React from 'react';
 
-const FILL_ME_IN = (props) => {
+const QuickLookButton = (props) => {
 
   return (
-    <div></div>
+    <div>
+      <button className='quickLook'>
+        QUICK LOOK
+      </button>
+    </div>
   );
 
 };
 
-export default FILL_ME_IN;
+export default QuickLookButton;
