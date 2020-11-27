@@ -91,5 +91,6 @@ app.get('/api/products/:id/youmayalsolike', (req, res) => {
 // * 201: Product successfully added to user's cart
 // * 400: Unsuccessful attempt at adding product to cart
 
-
-module.exports = app;
+app.listen(4444, () => {
+  console.log('App listening at http://localhost:4444');
+});

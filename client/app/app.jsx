@@ -36,9 +36,7 @@ class App extends React.Component {
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }
 
-  handleArrowClick(event) {
-    console.log('clicked');
-    const clicked = event.target.name;
+  handleArrowClick(name) {
     const ranges = {
       '1': [0, 5],
       '2': [5, 10],
@@ -51,7 +49,7 @@ class App extends React.Component {
         return this.state.similarPage + 1;
       }
     };
-    const newPage = pageTurner(clicked);
+    const newPage = pageTurner(name);
     const displayed = this.state.similarProducts.slice(...ranges[newPage]);
 
     this.setState(prevState => {
@@ -70,8 +68,10 @@ class App extends React.Component {
           handleArrowClick={this.handleArrowClick}
           similarPage={this.state.similarPage}
         />
+        <div onClick={() => console.log('hey')} className="hey"></div>
       </AppStyles>
-    )};
+    )
+  };
 
 }
 

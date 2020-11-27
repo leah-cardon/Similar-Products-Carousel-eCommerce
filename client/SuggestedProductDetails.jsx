@@ -11,7 +11,7 @@ const SuggestedProductDetails = (props) => {
   return (
     <div className='productDetails'>
       <div>
-        <p class='brandName'>
+        <p className='brandName'>
           {props.details.brand}
         </p>
         <p>
