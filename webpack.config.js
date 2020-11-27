@@ -1,22 +1,47 @@
 const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const SRC_DIR = path.join(__dirname, './client/index.jsx');
+const PUBLIC_DIR = path.join(__dirname, './public');
 
 module.exports = {
-  entry: './client/index.jsx',
-  watch: true,
+  entry: [SRC_DIR],
   output: {
+    path: PUBLIC_DIR,
     filename: 'main.js',
-    path: path.resolve(__dirname, 'public'),
   },
   module: {
     rules: [
       {
-        test: /.jsx?$/,
-        include: path.join(__dirname, '/client'),
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        }
-      }
+        use: ['babel-loader']
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource'
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg)$/,
+        type: 'asset/inline'
+      },
+      {
+        test: /\.(css)$/,
+        use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader', 'postcss-loader']
+      },
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Sethora',
+      favicon: false,
+      showErrors: true,
+      cache: true,
+      template: path.join(__dirname, './client/index.html'),
+      filename: 'index.html'
+    }),
+    new MiniCssExtractPlugin()
+  ]
 };
