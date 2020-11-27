@@ -1,11 +1,10 @@
 import React from 'react';
 
 const RightArrow = (props) => {
-
   return (
     <div>
       <button
-        onClick={props.handleArrowClick}
+        onClick={() => props.handleArrowClick('rightArrow')}
         name="rightArrow"
         data-testid="rightArrow"
         disabled={props.similarPage >= 3}

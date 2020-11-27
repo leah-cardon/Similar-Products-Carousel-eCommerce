@@ -3,11 +3,11 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const SRC_DIR = path.join(__dirname, './client/index.jsx');
+const SRC_DIR = path.join(__dirname, './client/index.js');
 const PUBLIC_DIR = path.join(__dirname, './public');
 
 module.exports = {
-  entry: [SRC_DIR],
+  entry: SRC_DIR,
   output: {
     path: PUBLIC_DIR,
     filename: 'main.js',
@@ -33,6 +33,7 @@ module.exports = {
       },
     ]
   },
+  mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Sethora',
