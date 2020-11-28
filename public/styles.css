@@ -137,6 +137,7 @@ div {
 .modalPhoto {
   height: 300px;
   width: 300px;
+  display: block;
 }
 
 .sectionDivider {
@@ -163,7 +164,9 @@ div {
 }
 
 .modalContainer {
-  display: flex;
+  display: grid;
+  grid-template-rows: 324px auto;
+  max-width: 100%;
   flex-direction: column;
   position: relative;
   color: rgb(0, 0, 0);
@@ -173,32 +176,12 @@ div {
   font-size: 14px;
   line-height: 1.5;
   pointer-events: auto;
-  min-height: 100%;
 }
 
 .photoAndDetailsModal {
   margin-bottom: 24px;
-  display: flex;
-  flex-direction: row;
-  margin-left: -12px;
-  margin-right: -12px;
-  justify-content: flex-start;
-}
-
-.productPhoto {
-  flex-basis: auto;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-bottom: 24px;
-  min-width: 0px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: contain;
+  display: grid;
+  grid-template-columns: 324px auto;
 }
 
 .footerModal {
@@ -216,4 +199,11 @@ div {
   margin-left: auto;
   margin-right: 0;
   margin-top: 0;
+}
+
+.modalPhotoBox {
+  display: block;
+  width: 324px;
+  height: 324px;
+  border: 3px solid red;
 }

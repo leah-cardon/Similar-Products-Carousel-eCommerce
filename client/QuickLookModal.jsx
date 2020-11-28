@@ -43,17 +43,17 @@ const QuickLookModal = (props) => {
   return ReactDOM.createPortal(
     <>
       <div style={OVERLAY_STYLES} />
-        <div className='modal' style={MODAL_STYLES} >
+        <div className='modal modalContainer' style={MODAL_STYLES} >
           <button
             className='modalX'
             onClick={props.onClose}>
             X
           </button>
-          <div className='modal photoAndDetailsModal'>product details
+          <div className='modal photoAndDetailsModal'>
             <ProductPhoto
             product={props.product}
             size='modal'
-            className='productPhoto'
+            className='modalPhotoBox'
             />
             <div className='modal'>info/colors
               <div>{props.product.brand}</div>
