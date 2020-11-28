@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CompositeProductImage from './CompositeProductImage.jsx';
+import ProductPhoto from './ProductPhoto.jsx';
 
 const MODAL_STYLES = {
   position: 'fixed',
   top: '50%',
   left: '50%',
+  flex: '1 1 0%',
   transform: 'translate(-50%, -50%)',
   backgroundColor: '#FFF',
-  padding: '50px',
+  padding: '16px 16px 32px',
+  display: 'block',
   zIndex: 1000
 }
 
@@ -18,7 +20,7 @@ const OVERLAY_STYLES = {
   left: 0,
   right: 0,
   bottom: 0,
-  backgroundColor: 'rgba(0, 0, 0, .7)',
+  backgroundColor: 'rgba(0, 0, 0, .15)',
   zIndex: 1000
 }
 
@@ -39,7 +41,7 @@ const QuickLookModal = (props) => {
       <div style={OVERLAY_STYLES} />
       <div style={MODAL_STYLES} >
         <div>product details
-          <CompositeProductImage product={props.product} />
+          <ProductPhoto product={props.product} size='modal' />
           <div>info/colors
             <div>{props.product.brand}</div>
             <div>{props.product.product_name}</div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import LineBreak from './LineBreak.jsx';
+import SectionDivider from './SectionDivider.jsx';
 
 const SuggestedProductsFooter = (props) => {
 
   return (
     <div>
-      <LineBreak />
+      <SectionDivider />
     </div>
   );
 

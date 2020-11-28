@@ -5,7 +5,7 @@ const NewBanner = (props) => {
   if (props.new === true) {
     return (
       <div>
-        <span className='new'>NEW</span>
+        <span className={props.size + 'New'}>NEW</span>
       </div>
     );
   } else {

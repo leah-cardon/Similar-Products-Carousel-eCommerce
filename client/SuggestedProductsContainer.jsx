@@ -5,7 +5,7 @@ import SuggestedProductsFooter from './SuggestedProductsFooter.jsx';
 
 const SuggestedProductsContainer = (props) => {
   return (
-    <div>
+    <div className='body'>
       <SuggestedProductsHeader />
       <SuggestedProductsCarousel
         similarDisplayed={props.similarDisplayed}

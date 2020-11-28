@@ -28,7 +28,7 @@ div {
   grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
 }
 
-.productPhoto {
+.previewPhoto {
   height: 135px;
   width: 135px;
 }
@@ -47,7 +47,7 @@ div {
   font-weight: 700;
 }
 
-.new {
+.previewNew {
   background-color: black;
   position: absolute;
   height: 15px;
@@ -56,6 +56,19 @@ div {
   font-size: 10px;
   color: white;
   text-align: center;
+}
+
+.modalNew {
+  position: absolute;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 0.25em;
+  padding: 0px 0.375em;
 }
 
 .quickLook {
@@ -119,4 +132,32 @@ div {
   font-family: georgia, times, serif;
   font-size: 24px;
   text-align: center;
+}
+
+.modalPhoto {
+  height: 600px;
+  width: 600px;
+}
+
+.sectionDivider {
+  border-bottom: 1px solid;
+  border-color: #eee;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.body {
+  box-sizing: content-box;
+  width: 980px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
