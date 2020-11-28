@@ -30,6 +30,7 @@
     "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.1",
     "babel-plugin-styled-components": "^1.12.0",
+    "brotli-webpack-plugin": "^1.1.0",
     "css-loader": "^5.0.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
     "html-webpack-plugin": "^4.5.0",
