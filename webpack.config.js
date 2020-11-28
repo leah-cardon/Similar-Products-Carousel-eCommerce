@@ -48,5 +48,6 @@ module.exports = {
     new BrotliPlugin({
       asset: 'main.js.br',
       test: /\.(js)$/
+    })
   ]
 };
