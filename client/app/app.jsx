@@ -68,7 +68,6 @@ class App extends React.Component {
           handleArrowClick={this.handleArrowClick}
           similarPage={this.state.similarPage}
         />
-        <div onClick={() => console.log('hey')} className="hey"></div>
       </AppStyles>
     )
   };

@@ -3,13 +3,8 @@ import React from 'react';
 const SuggestedProductsHeader = (props) => {
 
   return (
-    <div>
-      <span>
+    <div className='title'>
         Similar Products
-      </span>
-      <span>
-        <a href="http://www.google.com">View More Clean Beauty</a>
-      </span>
     </div>
   );
 
