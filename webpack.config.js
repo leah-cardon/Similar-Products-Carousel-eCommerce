@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var BrotliPlugin = require('brotli-webpack-plugin');
 
 const SRC_DIR = path.join(__dirname, './client/index.js');
 const PUBLIC_DIR = path.join(__dirname, './public');
@@ -43,6 +44,10 @@ module.exports = {
       template: path.join(__dirname, './client/index.html'),
       filename: 'index.html'
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new BrotliPlugin({
+      asset: 'main.js.br',
+      test: /\.(js)$/
+    })
   ]
 };
