@@ -93,8 +93,6 @@ div {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  /* opacity: 0; */
-  /* transition: opacity 0.2s ease 0s; */
   text-align: center;
   line-height: 1;
   font-weight: 500;
@@ -102,9 +100,7 @@ div {
   padding-bottom: 8px;
   font-size: 11px;
   text-transform: uppercase;
-  /* cursor: pointer; */
   border-radius: 0;
-  /* border-color: #736b5e; */
 }
 
 #quickLookHover {
@@ -127,6 +123,9 @@ div {
   width: 32px;
 }
 
+.disabled {
+  opacity: 8%;
+}
 
 .title {
   line-height: 1;
