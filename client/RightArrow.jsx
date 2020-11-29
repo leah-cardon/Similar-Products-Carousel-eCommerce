@@ -4,7 +4,7 @@ const RightArrow = (props) => {
   return (
     <>
       <button
-        className="rightArrow"
+        className="arrow"
         onClick={() => props.handleArrowClick('rightArrow')}
         name="rightArrow"
         data-testid="rightArrow"
