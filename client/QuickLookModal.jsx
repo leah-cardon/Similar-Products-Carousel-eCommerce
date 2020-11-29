@@ -55,14 +55,18 @@ const QuickLookModal = (props) => {
             size='modal'
             className='modalPhotoBox'
             />
-            <div className='modal'>info/colors
-              <div>{props.product.brand}</div>
+            <div className='modal'>
+              <div className='brandName'>{props.product.brand}</div>
               <div>{props.product.product_name}</div>
-              <div>SIZE {props.product.sizes[0]}  •  ITEM {props.product.product_id}</div>
+              <div className='detailsSizeAndItem'>SIZE {props.product.sizes[0]}  •  ITEM {props.product.product_id}</div>
               <div>{props.product.short_detail}</div>
-              <div>
-                <a href={'/products/' + props.product.id + ''}>See product details</a>
-                </div>
+              <div className='linkDiv'>
+                <a
+                  href={'/products/' + props.product.id + ''}
+                  className='seeProductDetailsLink'>
+                    See product details
+                </a>
+              </div>
               <div>
                 COLOR: {props.product.colors[0].name} - {props.product.colors[0].description}
                 <div>

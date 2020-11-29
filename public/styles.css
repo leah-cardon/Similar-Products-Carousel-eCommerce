@@ -39,7 +39,7 @@ div {
   text-align: 'center';
 }
 
-.productDetails .brandName {
+.brandName {
   font-weight: 700;
 }
 
@@ -176,6 +176,7 @@ div {
   font-size: 14px;
   line-height: 1.5;
   pointer-events: auto;
+  border-radius: 6px;
 }
 
 .photoAndDetailsModal {
@@ -196,14 +197,28 @@ div {
 }
 
 .modalX {
-  margin-left: auto;
-  margin-right: 0;
-  margin-top: 0;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-.modalPhotoBox {
+.detailsSizeAndItem {
+  font-size: 12px;
+  margin-top: 4px;
+  color: rgb(117, 117, 117);
   display: block;
-  width: 324px;
-  height: 324px;
-  border: 3px solid red;
+}
+
+.seeProductDetailsLink {
+  cursor: pointer;
+  outline: 0;
+  color: #1470f5;
+  display: inline-block;
+}
+
+.linkDiv {
+  text-align: right;
+  display: block;
 }
