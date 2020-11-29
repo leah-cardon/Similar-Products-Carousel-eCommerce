@@ -12,7 +12,7 @@ const MODAL_STYLES = {
   display: 'flex',
   'flex-direction': 'column',
   'justify-content': 'flex-start',
-  zIndex: 1000,
+  zIndex: 1001,
   'max-width': '1012px',
   height: 'auto',
   padding: '24px 16px'
@@ -42,7 +42,7 @@ const QuickLookModal = (props) => {
 
   return ReactDOM.createPortal(
     <>
-      <div style={OVERLAY_STYLES} />
+      <div style={OVERLAY_STYLES} onClick={props.onClose} />
         <div className='modal modalContainer' style={MODAL_STYLES} >
           <button
             className='modalX'
