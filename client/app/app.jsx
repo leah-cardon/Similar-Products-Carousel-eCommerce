@@ -32,6 +32,7 @@ class App extends React.Component {
           similarProducts: products,
           similarDisplayed: products.slice(0, 5)
         });
+        console.log(this.state.similarDisplayed[0]);
       })
       .catch((err) => console.log('error in axios get request for all products: ', err));
   }

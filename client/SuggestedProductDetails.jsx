@@ -11,20 +11,40 @@ const SuggestedProductDetails = (props) => {
   return (
     <div className='productDetails'>
       <div>
-        <p className='brandName'>
-          {props.details.brand}
+        <p className='brandName centeredText'>
+          {props.product.brand}
         </p>
-        <p>
-          {props.details.product_name}
+        <p className='centeredText'>
+          {props.product.product_name}
         </p>
       </div>
-      <div className='price'>
-        {formatter.format(props.details.price)}
+      <div className='price centeredText'>
+        {formatter.format(props.product.price)}
       </div>
-      <div>
-        {props.details.stars}
-        {props.details.reviews}
+      <div className="star-ratings-css">
+        <div
+          className="star-ratings-css-top"
+          style={{width: (props.product.average_rating / 5 * 100)+ '%'}}
+        >
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
+        <div
+          className="star-ratings-css-bottom"
+        >
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
       </div>
+        <span>
+          {props.product.review_count}
+        </span>
     </div>
   );
 

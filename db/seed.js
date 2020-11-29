@@ -102,11 +102,11 @@ const generateProducts = (quantity) => {
       'short_detail': faker.lorem.sentence(),
       'sizes': getRandomLengthFakerArray(4, faker.commerce.productAdjective),
       'colors': generateRandomLengthColorArray(5),
-      'price': faker.commerce.price(),
+      'price': Math.round(Math.random() * 100),
       'loved': false,
       'loves': faker.random.number(),
       'stars': faker.random.number(),
-      'review_count': faker.random.number(),
+      'review_count': Math.round(Math.random() * 300),
       'average_rating': Math.round(Math.random() * 50) / 10,
       'new': faker.random.boolean(),
       'tags': getRandomLengthFakerArray(3, faker.lorem.word),
@@ -122,3 +122,5 @@ db.removeAllFromProducts().then(
   () => {
     db.insertAllIntoProducts(generateProducts(100));
   });
+
+console.log('database seeding complete!');
