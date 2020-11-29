@@ -1,6 +1,7 @@
 import React from 'react';
-import CompositeProductImage from './CompositeProductImage.jsx';
-import SuggestedProductDetails from './SuggestedProductDetails.jsx';
+import CompositeProductImage from '../CompositeProductImage/CompositeProductImage.jsx';
+import SuggestedProductDetails from '../SuggestedProductDetails/SuggestedProductDetails.jsx';
+import SuggestedProductStyles from './SuggestedProductStyles.js';
 
 const SuggestedProduct = (props) => {
 

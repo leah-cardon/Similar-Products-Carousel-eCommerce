@@ -1,5 +1,6 @@
 import React from 'react';
-import SectionDivider from './SectionDivider.jsx';
+import SectionDivider from '../SectionDivider/SectionDivider.jsx';
+import SuggestedProductsFooterStyles from './SuggestedProductsFooterStyles.js';
 
 const SuggestedProductsFooter = (props) => {
 

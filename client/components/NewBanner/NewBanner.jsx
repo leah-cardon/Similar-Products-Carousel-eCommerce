@@ -1,4 +1,5 @@
 import React from 'react';
+import NewBannerStyles from './NewBannerStyles.js';
 
 const NewBanner = (props) => {
 

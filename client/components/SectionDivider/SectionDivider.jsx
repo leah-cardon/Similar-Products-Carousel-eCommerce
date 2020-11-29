@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionDividerStyles from './SectionDividerStyles.js';
 
 const SectionDivider = (props) => {
 

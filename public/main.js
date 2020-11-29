@@ -408,99 +408,9 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 
 /***/ }),
 
-/***/ "./client/CompositeProductImage.jsx":
-/*!******************************************!*\
-  !*** ./client/CompositeProductImage.jsx ***!
-  \******************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductPhoto.jsx */ \"./client/ProductPhoto.jsx\");\n/* harmony import */ var _QuickLookButton_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./QuickLookButton.jsx */ \"./client/QuickLookButton.jsx\");\n/* harmony import */ var _QuickLookModal_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuickLookModal.jsx */ \"./client/QuickLookModal.jsx\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\nvar CompositeProductImage = function CompositeProductImage(props) {\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),\n      _useState2 = _slicedToArray(_useState, 2),\n      isOpen = _useState2[0],\n      setIsOpen = _useState2[1];\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"compositeImage\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_1__.default, {\n    size: \"preview\",\n    product: props.product\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: \"quickLook\",\n    onClick: function onClick() {\n      return setIsOpen(true);\n    }\n  }, \"QUICK LOOK\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuickLookModal_jsx__WEBPACK_IMPORTED_MODULE_3__.default, {\n    product: props.product,\n    open: isOpen,\n    onClose: function onClose() {\n      return setIsOpen(false);\n    }\n  }));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CompositeProductImage);\n\n//# sourceURL=webpack://similarproductsservice/./client/CompositeProductImage.jsx?");
-
-/***/ }),
-
-/***/ "./client/LeftArrow.jsx":
-/*!******************************!*\
-  !*** ./client/LeftArrow.jsx ***!
-  \******************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar LeftArrow = function LeftArrow(props) {\n  var disabled = props.similarPage <= 1;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: disabled ? 'arrow disabled' : 'arrow',\n    onClick: function onClick() {\n      return props.handleArrowClick('leftArrow');\n    },\n    name: \"leftArrow\",\n    \"data-testid\": \"leftArrow\",\n    disabled: disabled\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    viewBox: \"0 0 16 32\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M2.2 16.052l13.5-14.33c.1-.098.3-.397.3-.695 0-.498-.4-.995-.9-.995-.3 0-.5.2-.6.298L.4 15.256c-.2.298-.4.497-.4.796 0 .298.1.398.2.497l.1.1L14.5 31.67c.1.1.3.3.6.3.5 0 .9-.5.9-.996 0-.3-.2-.498-.3-.697L2.2 16.05z\"\n  }))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeftArrow);\n\n//# sourceURL=webpack://similarproductsservice/./client/LeftArrow.jsx?");
-
-/***/ }),
-
-/***/ "./client/NewBanner.jsx":
-/*!******************************!*\
-  !*** ./client/NewBanner.jsx ***!
-  \******************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar NewBanner = function NewBanner(props) {\n  if (props[\"new\"] === true) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n      className: props.size + 'New'\n    }, \"NEW\"));\n  } else {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null);\n  }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewBanner);\n\n//# sourceURL=webpack://similarproductsservice/./client/NewBanner.jsx?");
-
-/***/ }),
-
-/***/ "./client/ProductPhoto.jsx":
-/*!*********************************!*\
-  !*** ./client/ProductPhoto.jsx ***!
-  \*********************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _NewBanner_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewBanner.jsx */ \"./client/NewBanner.jsx\");\n\n\n\nvar ProductPhoto = function ProductPhoto(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NewBanner_jsx__WEBPACK_IMPORTED_MODULE_1__.default, {\n    \"new\": props.product[\"new\"],\n    size: props.size\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", {\n    src: props.product.image_url,\n    className: props.size + 'Photo'\n  }));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductPhoto);\n\n//# sourceURL=webpack://similarproductsservice/./client/ProductPhoto.jsx?");
-
-/***/ }),
-
-/***/ "./client/QuickLookButton.jsx":
-/*!************************************!*\
-  !*** ./client/QuickLookButton.jsx ***!
-  \************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar QuickLookButton = function QuickLookButton(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: \"quickLook\"\n  }, \"QUICK LOOK\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuickLookButton);\n\n//# sourceURL=webpack://similarproductsservice/./client/QuickLookButton.jsx?");
-
-/***/ }),
-
-/***/ "./client/QuickLookModal.jsx":
-/*!***********************************!*\
-  !*** ./client/QuickLookModal.jsx ***!
-  \***********************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProductPhoto.jsx */ \"./client/ProductPhoto.jsx\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\nvar MODAL_STYLES = _defineProperty({\n  position: 'fixed',\n  top: '50%',\n  left: '50%',\n  transform: 'translate(-50%, -50%)',\n  backgroundColor: '#FFF',\n  padding: '16px 16px 32px',\n  display: 'flex',\n  'flex-direction': 'column',\n  'justify-content': 'flex-start',\n  zIndex: 1001,\n  'max-width': '1012px',\n  height: 'auto'\n}, \"padding\", '24px 16px');\n\nvar OVERLAY_STYLES = {\n  position: 'fixed',\n  top: 0,\n  left: 0,\n  right: 0,\n  bottom: 0,\n  backgroundColor: 'rgba(0, 0, 0, .15)',\n  zIndex: 1000\n};\n\nvar QuickLookModal = function QuickLookModal(props) {\n  if (!props.open) return null;\n  var colorBoxes = [];\n\n  for (var i = 0; i < props.product.colors.length; i++) {\n    colorBoxes.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"COLOR BOX    \"));\n  }\n\n  var formatter = new Intl.NumberFormat('en-US', {\n    style: 'currency',\n    currency: 'USD',\n    minimumFractionDigits: 2\n  });\n  return /*#__PURE__*/react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    style: OVERLAY_STYLES,\n    onClick: props.onClose\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"modalContainer\",\n    style: MODAL_STYLES\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: \"modalX\",\n    onClick: props.onClose\n  }, \"X\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"photoAndDetailsModal\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n    product: props.product,\n    size: \"modal\",\n    className: \"modalPhotoBox\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"brandName\"\n  }, props.product.brand), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, props.product.product_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"detailsSizeAndItem\"\n  }, \"SIZE \", props.product.sizes[0], \"  \\u2022  ITEM \", props.product.product_id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, props.product.short_detail), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"linkDiv\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"a\", {\n    href: '/products/' + props.product.id + '',\n    className: \"seeProductDetailsLink\"\n  }, \"See product details\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"COLOR: \", props.product.colors[0].name, \" - \", props.product.colors[0].description, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"color boxes container each color box (image) with hover animation and selection box\", colorBoxes)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"footerModal\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-top\",\n    style: {\n      width: props.product.average_rating / 5 * 100 + '%'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-bottom\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"boldText\"\n  }, props.product.review_count, \" reviews\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"dividerText\"\n  }, \" | \"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    \"aria-hidden\": \"true\",\n    viewBox: \"0 0 24 24\",\n    \"class\": \"modalHeart\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z\"\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"boldText\"\n  }, props.product.loves, \" loves\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"modalBuy\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"price modalPrice\"\n  }, formatter.format(props.product.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"modalBuyButtons\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"relative\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"select\", {\n    className: \"modalDropdown\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"1\"\n  }, \"1\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"2\"\n  }, \"2\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"3\"\n  }, \"3\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"4\"\n  }, \"4\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"5\"\n  }, \"5\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"6\"\n  }, \"6\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"7\"\n  }, \"7\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"8\"\n  }, \"8\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"9\"\n  }, \"9\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"10\"\n  }, \"10\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"modalDropdownArrow\",\n    direction: \"down\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    viewBox: \"0 0 24 24\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"g\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M12 5.333c-.8 0-1.333.534-1.333 1.334v8c0 .8.533 1.333 1.333 1.333.8 0 1.333-.533 1.333-1.333v-8c0-.8-.533-1.334-1.333-1.334z\",\n    fill: \"#fff\"\n  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"add to basket button\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"add to loves button with hover animation\"))))))), document.getElementById('portal'));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuickLookModal);\n\n//# sourceURL=webpack://similarproductsservice/./client/QuickLookModal.jsx?");
-
-/***/ }),
-
-/***/ "./client/RightArrow.jsx":
+/***/ "./client/IndexStyles.js":
 /*!*******************************!*\
-  !*** ./client/RightArrow.jsx ***!
+  !*** ./client/IndexStyles.js ***!
   \*******************************/
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
@@ -509,112 +419,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar RightArrow = function RightArrow(props) {\n  var disabled = props.similarPage >= 3;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: disabled ? 'arrow disabled' : 'arrow',\n    onClick: function onClick() {\n      return props.handleArrowClick('rightArrow');\n    },\n    name: \"rightArrow\",\n    \"data-testid\": \"rightArrow\",\n    disabled: disabled\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    viewBox: \"0 0 16 32\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M13.8 15.952L.3 30.28c-.1.1-.3.398-.3.697 0 .497.4.995.9.995.3 0 .5-.2.6-.3L15.6 16.75c.2-.298.4-.497.4-.796 0-.298-.1-.398-.2-.497l-.1-.1L1.5.33C1.4.23 1.2.032.9.032c-.5 0-.9.497-.9.995 0 .298.2.497.3.696l13.5 14.23z\"\n  }))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RightArrow);\n\n//# sourceURL=webpack://similarproductsservice/./client/RightArrow.jsx?");
-
-/***/ }),
-
-/***/ "./client/SectionDivider.jsx":
-/*!***********************************!*\
-  !*** ./client/SectionDivider.jsx ***!
-  \***********************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar SectionDivider = function SectionDivider(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"sectionDivider\"\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SectionDivider);\n\n//# sourceURL=webpack://similarproductsservice/./client/SectionDivider.jsx?");
-
-/***/ }),
-
-/***/ "./client/SuggestedProduct.jsx":
-/*!*************************************!*\
-  !*** ./client/SuggestedProduct.jsx ***!
-  \*************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _CompositeProductImage_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CompositeProductImage.jsx */ \"./client/CompositeProductImage.jsx\");\n/* harmony import */ var _SuggestedProductDetails_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SuggestedProductDetails.jsx */ \"./client/SuggestedProductDetails.jsx\");\n\n\n\n\nvar SuggestedProduct = function SuggestedProduct(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CompositeProductImage_jsx__WEBPACK_IMPORTED_MODULE_1__.default, {\n    product: props.similarProduct\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductDetails_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n    product: props.similarProduct\n  }));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProduct);\n\n//# sourceURL=webpack://similarproductsservice/./client/SuggestedProduct.jsx?");
-
-/***/ }),
-
-/***/ "./client/SuggestedProductDetails.jsx":
-/*!********************************************!*\
-  !*** ./client/SuggestedProductDetails.jsx ***!
-  \********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar SuggestedProductDetails = function SuggestedProductDetails(props) {\n  var formatter = new Intl.NumberFormat('en-US', {\n    style: 'currency',\n    currency: 'USD',\n    minimumFractionDigits: 2\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"productDetails\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n    className: \"brandName centeredText\"\n  }, props.product.brand), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n    className: \"centeredText\"\n  }, props.product.product_name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"price centeredText\"\n  }, formatter.format(props.product.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-top\",\n    style: {\n      width: props.product.average_rating / 5 * 100 + '%'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-bottom\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, props.product.review_count));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductDetails);\n\n//# sourceURL=webpack://similarproductsservice/./client/SuggestedProductDetails.jsx?");
-
-/***/ }),
-
-/***/ "./client/SuggestedProductsCarousel.jsx":
-/*!**********************************************!*\
-  !*** ./client/SuggestedProductsCarousel.jsx ***!
-  \**********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './CarouselPageIndicator.jsx'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _SuggestedProduct_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SuggestedProduct.jsx */ \"./client/SuggestedProduct.jsx\");\n/* harmony import */ var _LeftArrow_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LeftArrow.jsx */ \"./client/LeftArrow.jsx\");\n/* harmony import */ var _RightArrow_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RightArrow.jsx */ \"./client/RightArrow.jsx\");\n\n\n\n\n\n\nvar SuggestedProductsCarousel = function SuggestedProductsCarousel(props) {\n  if (props.similarDisplayed.length === 0) {\n    return null;\n  }\n\n  var suggestedProducts = props.similarDisplayed.map(function (item, index) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProduct_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n      similarProduct: item,\n      key: index\n    });\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"carouselAndPgIndicator\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"suggestedProductsCarousel\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"arrowContainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_LeftArrow_jsx__WEBPACK_IMPORTED_MODULE_3__.default, {\n    handleArrowClick: props.handleArrowClick,\n    similarPage: props.similarPage\n  })), suggestedProducts, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"arrowContainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_RightArrow_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {\n    handleArrowClick: props.handleArrowClick,\n    similarPage: props.similarPage\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './CarouselPageIndicator.jsx'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsCarousel);\n\n//# sourceURL=webpack://similarproductsservice/./client/SuggestedProductsCarousel.jsx?");
-
-/***/ }),
-
-/***/ "./client/SuggestedProductsContainer.jsx":
-/*!***********************************************!*\
-  !*** ./client/SuggestedProductsContainer.jsx ***!
-  \***********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SuggestedProductsHeader_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SuggestedProductsHeader.jsx */ \"./client/SuggestedProductsHeader.jsx\");\n/* harmony import */ var _SuggestedProductsCarousel_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SuggestedProductsCarousel.jsx */ \"./client/SuggestedProductsCarousel.jsx\");\n/* harmony import */ var _SuggestedProductsFooter_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SuggestedProductsFooter.jsx */ \"./client/SuggestedProductsFooter.jsx\");\n\n\n\n\n\nvar SuggestedProductsContainer = function SuggestedProductsContainer(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"body\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsHeader_jsx__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsCarousel_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n    similarDisplayed: props.similarDisplayed,\n    handleArrowClick: props.handleArrowClick,\n    similarPage: props.similarPage\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsFooter_jsx__WEBPACK_IMPORTED_MODULE_3__.default, null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsContainer);\n\n//# sourceURL=webpack://similarproductsservice/./client/SuggestedProductsContainer.jsx?");
-
-/***/ }),
-
-/***/ "./client/SuggestedProductsFooter.jsx":
-/*!********************************************!*\
-  !*** ./client/SuggestedProductsFooter.jsx ***!
-  \********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SectionDivider_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SectionDivider.jsx */ \"./client/SectionDivider.jsx\");\n\n\n\nvar SuggestedProductsFooter = function SuggestedProductsFooter(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SectionDivider_jsx__WEBPACK_IMPORTED_MODULE_1__.default, null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsFooter);\n\n//# sourceURL=webpack://similarproductsservice/./client/SuggestedProductsFooter.jsx?");
-
-/***/ }),
-
-/***/ "./client/SuggestedProductsHeader.jsx":
-/*!********************************************!*\
-  !*** ./client/SuggestedProductsHeader.jsx ***!
-  \********************************************/
-/*! namespace exports */
-/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
-/*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nvar SuggestedProductsHeader = function SuggestedProductsHeader(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"title\"\n  }, \"Similar Products\");\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsHeader);\n\n//# sourceURL=webpack://similarproductsservice/./client/SuggestedProductsHeader.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar IndexStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"IndexStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/IndexStyles.js?");
 
 /***/ }),
 
@@ -644,7 +449,457 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _AppStyles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AppStyles.js */ \"./client/app/AppStyles.js\");\n/* harmony import */ var _SuggestedProductsContainer_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../SuggestedProductsContainer.jsx */ \"./client/SuggestedProductsContainer.jsx\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _iterableToArray(iter) { if (typeof Symbol !== \"undefined\" && Symbol.iterator in Object(iter)) return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  var _super = _createSuper(App);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      similarProducts: [],\n      similarDisplayed: [],\n      similarPage: 1,\n      youMayLikePage: 1\n    };\n    _this.handleArrowClick = _this.handleArrowClick.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      var _this2 = this;\n\n      var path = window.location.pathname.split('/');\n      var id = path[2] === undefined ? 2 : path[2];\n      axios__WEBPACK_IMPORTED_MODULE_2___default().get(\"/api/products/\".concat(id, \"/similar\")).then(function (result) {\n        return result.data;\n      }).then(function (products) {\n        _this2.setState({\n          similarProducts: products,\n          similarDisplayed: products.slice(0, 5)\n        });\n\n        console.log(_this2.state.similarDisplayed[0]);\n      })[\"catch\"](function (err) {\n        return console.log('error in axios get request for all products: ', err);\n      });\n    }\n  }, {\n    key: \"handleArrowClick\",\n    value: function handleArrowClick(name) {\n      var _this3 = this,\n          _this$state$similarPr;\n\n      var ranges = {\n        '1': [0, 5],\n        '2': [5, 10],\n        '3': [10, 15]\n      };\n\n      var pageTurner = function pageTurner(eventName) {\n        if (eventName === 'leftArrow') {\n          return _this3.state.similarPage - 1;\n        } else {\n          return _this3.state.similarPage + 1;\n        }\n      };\n\n      var newPage = pageTurner(name);\n\n      var displayed = (_this$state$similarPr = this.state.similarProducts).slice.apply(_this$state$similarPr, _toConsumableArray(ranges[newPage]));\n\n      this.setState(function (prevState) {\n        return {\n          similarPage: newPage,\n          similarDisplayed: displayed\n        };\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AppStyles_js__WEBPACK_IMPORTED_MODULE_3__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsContainer_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {\n        similarDisplayed: this.state.similarDisplayed,\n        handleArrowClick: this.handleArrowClick,\n        similarPage: this.state.similarPage\n      }));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://similarproductsservice/./client/app/app.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _AppStyles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AppStyles.js */ \"./client/app/AppStyles.js\");\n/* harmony import */ var _components_SuggestedProductsContainer_SuggestedProductsContainer_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SuggestedProductsContainer/SuggestedProductsContainer.jsx */ \"./client/components/SuggestedProductsContainer/SuggestedProductsContainer.jsx\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }\n\nfunction _nonIterableSpread() { throw new TypeError(\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _iterableToArray(iter) { if (typeof Symbol !== \"undefined\" && Symbol.iterator in Object(iter)) return Array.from(iter); }\n\nfunction _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  var _super = _createSuper(App);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      similarProducts: [],\n      similarDisplayed: [],\n      similarPage: 1,\n      youMayLikePage: 1\n    };\n    _this.handleArrowClick = _this.handleArrowClick.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      var _this2 = this;\n\n      var path = window.location.pathname.split('/');\n      var id = path[2] === undefined ? 2 : path[2];\n      axios__WEBPACK_IMPORTED_MODULE_2___default().get(\"/api/products/\".concat(id, \"/similar\")).then(function (result) {\n        return result.data;\n      }).then(function (products) {\n        _this2.setState({\n          similarProducts: products,\n          similarDisplayed: products.slice(0, 5)\n        });\n\n        console.log(_this2.state.similarDisplayed[0]);\n      })[\"catch\"](function (err) {\n        return console.log('error in axios get request for all products: ', err);\n      });\n    }\n  }, {\n    key: \"handleArrowClick\",\n    value: function handleArrowClick(name) {\n      var _this3 = this,\n          _this$state$similarPr;\n\n      var ranges = {\n        '1': [0, 5],\n        '2': [5, 10],\n        '3': [10, 15]\n      };\n\n      var pageTurner = function pageTurner(eventName) {\n        if (eventName === 'leftArrow') {\n          return _this3.state.similarPage - 1;\n        } else {\n          return _this3.state.similarPage + 1;\n        }\n      };\n\n      var newPage = pageTurner(name);\n\n      var displayed = (_this$state$similarPr = this.state.similarProducts).slice.apply(_this$state$similarPr, _toConsumableArray(ranges[newPage]));\n\n      this.setState(function (prevState) {\n        return {\n          similarPage: newPage,\n          similarDisplayed: displayed\n        };\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_AppStyles_js__WEBPACK_IMPORTED_MODULE_3__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_SuggestedProductsContainer_SuggestedProductsContainer_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {\n        similarDisplayed: this.state.similarDisplayed,\n        handleArrowClick: this.handleArrowClick,\n        similarPage: this.state.similarPage\n      }));\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_0__.Component);\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://similarproductsservice/./client/app/app.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/CarouselPageIndicator/CarouselPageIndicator.jsx":
+/*!***************************************************************************!*\
+  !*** ./client/components/CarouselPageIndicator/CarouselPageIndicator.jsx ***!
+  \***************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _CarouselPageIndicatorStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CarouselPageIndicatorStyles.js */ \"./client/components/CarouselPageIndicator/CarouselPageIndicatorStyles.js\");\n\n\n\nvar CarouselPageIndicator = function CarouselPageIndicator(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"carousel page indicator (dots)\");\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CarouselPageIndicator);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/CarouselPageIndicator/CarouselPageIndicator.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/CarouselPageIndicator/CarouselPageIndicatorStyles.js":
+/*!********************************************************************************!*\
+  !*** ./client/components/CarouselPageIndicator/CarouselPageIndicatorStyles.js ***!
+  \********************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar CarouselPageIndicatorStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"CarouselPageIndicatorStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CarouselPageIndicatorStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/CarouselPageIndicator/CarouselPageIndicatorStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/CompositeProductImage/CompositeProductImage.jsx":
+/*!***************************************************************************!*\
+  !*** ./client/components/CompositeProductImage/CompositeProductImage.jsx ***!
+  \***************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _ProductPhoto_ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ProductPhoto/ProductPhoto.jsx */ \"./client/components/ProductPhoto/ProductPhoto.jsx\");\n/* harmony import */ var _QuickLookButton_QuickLookButton_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../QuickLookButton/QuickLookButton.jsx */ \"./client/components/QuickLookButton/QuickLookButton.jsx\");\n/* harmony import */ var _QuickLookModal_QuickLookModal_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../QuickLookModal/QuickLookModal.jsx */ \"./client/components/QuickLookModal/QuickLookModal.jsx\");\n/* harmony import */ var _CompositeProductImageStyles_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CompositeProductImageStyles.js */ \"./client/components/CompositeProductImage/CompositeProductImageStyles.js\");\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\nvar CompositeProductImage = function CompositeProductImage(props) {\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),\n      _useState2 = _slicedToArray(_useState, 2),\n      isOpen = _useState2[0],\n      setIsOpen = _useState2[1];\n\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"compositeImage\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProductPhoto_ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_1__.default, {\n    size: \"preview\",\n    product: props.product\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: \"quickLook\",\n    onClick: function onClick() {\n      return setIsOpen(true);\n    }\n  }, \"QUICK LOOK\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuickLookModal_QuickLookModal_jsx__WEBPACK_IMPORTED_MODULE_3__.default, {\n    product: props.product,\n    open: isOpen,\n    onClose: function onClose() {\n      return setIsOpen(false);\n    }\n  }));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CompositeProductImage);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/CompositeProductImage/CompositeProductImage.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/CompositeProductImage/CompositeProductImageStyles.js":
+/*!********************************************************************************!*\
+  !*** ./client/components/CompositeProductImage/CompositeProductImageStyles.js ***!
+  \********************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar CompositeProductImageStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"CompositeProductImageStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CompositeProductImageStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/CompositeProductImage/CompositeProductImageStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/LeftArrow/LeftArrow.jsx":
+/*!***************************************************!*\
+  !*** ./client/components/LeftArrow/LeftArrow.jsx ***!
+  \***************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _LeftArrowStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LeftArrowStyles.js */ \"./client/components/LeftArrow/LeftArrowStyles.js\");\n\n\n\nvar LeftArrow = function LeftArrow(props) {\n  var disabled = props.similarPage <= 1;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: disabled ? 'arrow disabled' : 'arrow',\n    onClick: function onClick() {\n      return props.handleArrowClick('leftArrow');\n    },\n    name: \"leftArrow\",\n    \"data-testid\": \"leftArrow\",\n    disabled: disabled\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    viewBox: \"0 0 16 32\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M2.2 16.052l13.5-14.33c.1-.098.3-.397.3-.695 0-.498-.4-.995-.9-.995-.3 0-.5.2-.6.298L.4 15.256c-.2.298-.4.497-.4.796 0 .298.1.398.2.497l.1.1L14.5 31.67c.1.1.3.3.6.3.5 0 .9-.5.9-.996 0-.3-.2-.498-.3-.697L2.2 16.05z\"\n  }))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeftArrow);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/LeftArrow/LeftArrow.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/LeftArrow/LeftArrowStyles.js":
+/*!********************************************************!*\
+  !*** ./client/components/LeftArrow/LeftArrowStyles.js ***!
+  \********************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar LeftArrowStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"LeftArrowStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LeftArrowStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/LeftArrow/LeftArrowStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/NewBanner/NewBanner.jsx":
+/*!***************************************************!*\
+  !*** ./client/components/NewBanner/NewBanner.jsx ***!
+  \***************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _NewBannerStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewBannerStyles.js */ \"./client/components/NewBanner/NewBannerStyles.js\");\n\n\n\nvar NewBanner = function NewBanner(props) {\n  if (props[\"new\"] === true) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n      className: props.size + 'New'\n    }, \"NEW\"));\n  } else {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null);\n  }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewBanner);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/NewBanner/NewBanner.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/NewBanner/NewBannerStyles.js":
+/*!********************************************************!*\
+  !*** ./client/components/NewBanner/NewBannerStyles.js ***!
+  \********************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar NewBannerStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"NewBannerStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewBannerStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/NewBanner/NewBannerStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/ProductPhoto/ProductPhoto.jsx":
+/*!*********************************************************!*\
+  !*** ./client/components/ProductPhoto/ProductPhoto.jsx ***!
+  \*********************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _NewBanner_NewBanner_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../NewBanner/NewBanner.jsx */ \"./client/components/NewBanner/NewBanner.jsx\");\n/* harmony import */ var _ProductPhotoStyles_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProductPhotoStyles.js */ \"./client/components/ProductPhoto/ProductPhotoStyles.js\");\n\n\n\n\nvar ProductPhoto = function ProductPhoto(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_NewBanner_NewBanner_jsx__WEBPACK_IMPORTED_MODULE_1__.default, {\n    \"new\": props.product[\"new\"],\n    size: props.size\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"img\", {\n    src: props.product.image_url,\n    className: props.size + 'Photo'\n  }));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductPhoto);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/ProductPhoto/ProductPhoto.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/ProductPhoto/ProductPhotoStyles.js":
+/*!**************************************************************!*\
+  !*** ./client/components/ProductPhoto/ProductPhotoStyles.js ***!
+  \**************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar ProductPhotoStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"ProductPhotoStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductPhotoStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/ProductPhoto/ProductPhotoStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/QuickLookButton/QuickLookButton.jsx":
+/*!***************************************************************!*\
+  !*** ./client/components/QuickLookButton/QuickLookButton.jsx ***!
+  \***************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _QuickLookButtonStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./QuickLookButtonStyles.js */ \"./client/components/QuickLookButton/QuickLookButtonStyles.js\");\n\n\n\nvar QuickLookButton = function QuickLookButton(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: \"quickLook\"\n  }, \"QUICK LOOK\"));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuickLookButton);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/QuickLookButton/QuickLookButton.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/QuickLookButton/QuickLookButtonStyles.js":
+/*!********************************************************************!*\
+  !*** ./client/components/QuickLookButton/QuickLookButtonStyles.js ***!
+  \********************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar QuickLookButtonStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"QuickLookButtonStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuickLookButtonStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/QuickLookButton/QuickLookButtonStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/QuickLookModal/QuickLookModal.jsx":
+/*!*************************************************************!*\
+  !*** ./client/components/QuickLookModal/QuickLookModal.jsx ***!
+  \*************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _ProductPhoto_ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ProductPhoto/ProductPhoto.jsx */ \"./client/components/ProductPhoto/ProductPhoto.jsx\");\n/* harmony import */ var _QuickLookModalStyles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./QuickLookModalStyles.js */ \"./client/components/QuickLookModal/QuickLookModalStyles.js\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\n\n\nvar MODAL_STYLES = _defineProperty({\n  position: 'fixed',\n  top: '50%',\n  left: '50%',\n  transform: 'translate(-50%, -50%)',\n  backgroundColor: '#FFF',\n  padding: '16px 16px 32px',\n  display: 'flex',\n  'flex-direction': 'column',\n  'justify-content': 'flex-start',\n  zIndex: 1001,\n  'max-width': '1012px',\n  height: 'auto'\n}, \"padding\", '24px 16px');\n\nvar OVERLAY_STYLES = {\n  position: 'fixed',\n  top: 0,\n  left: 0,\n  right: 0,\n  bottom: 0,\n  backgroundColor: 'rgba(0, 0, 0, .15)',\n  zIndex: 1000\n};\n\nvar QuickLookModal = function QuickLookModal(props) {\n  if (!props.open) return null;\n  var colorBoxes = [];\n\n  for (var i = 0; i < props.product.colors.length; i++) {\n    colorBoxes.push( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"COLOR BOX    \"));\n  }\n\n  var formatter = new Intl.NumberFormat('en-US', {\n    style: 'currency',\n    currency: 'USD',\n    minimumFractionDigits: 2\n  });\n  return /*#__PURE__*/react_dom__WEBPACK_IMPORTED_MODULE_1__.createPortal( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    style: OVERLAY_STYLES,\n    onClick: props.onClose\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"modalContainer\",\n    style: MODAL_STYLES\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: \"modalX\",\n    onClick: props.onClose\n  }, \"X\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"photoAndDetailsModal\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ProductPhoto_ProductPhoto_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n    product: props.product,\n    size: \"modal\",\n    className: \"modalPhotoBox\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"brandName\"\n  }, props.product.brand), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, props.product.product_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"detailsSizeAndItem\"\n  }, \"SIZE \", props.product.sizes[0], \"  \\u2022  ITEM \", props.product.product_id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, props.product.short_detail), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"linkDiv\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"a\", {\n    href: '/products/' + props.product.id + '',\n    className: \"seeProductDetailsLink\"\n  }, \"See product details\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"COLOR: \", props.product.colors[0].name, \" - \", props.product.colors[0].description, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"color boxes container each color box (image) with hover animation and selection box\", colorBoxes)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"footerModal\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-top\",\n    style: {\n      width: props.product.average_rating / 5 * 100 + '%'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-bottom\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"boldText\"\n  }, props.product.review_count, \" reviews\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"dividerText\"\n  }, \" | \"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    \"aria-hidden\": \"true\",\n    viewBox: \"0 0 24 24\",\n    \"class\": \"modalHeart\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z\"\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"boldText\"\n  }, props.product.loves, \" loves\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"modalBuy\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"price modalPrice\"\n  }, formatter.format(props.product.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"modalBuyButtons\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"relative\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"select\", {\n    className: \"modalDropdown\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"1\"\n  }, \"1\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"2\"\n  }, \"2\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"3\"\n  }, \"3\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"4\"\n  }, \"4\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"5\"\n  }, \"5\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"6\"\n  }, \"6\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"7\"\n  }, \"7\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"8\"\n  }, \"8\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"9\"\n  }, \"9\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"option\", {\n    value: \"10\"\n  }, \"10\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", {\n    className: \"modalDropdownArrow\",\n    direction: \"down\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    viewBox: \"0 0 24 24\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"g\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M12 5.333c-.8 0-1.333.534-1.333 1.334v8c0 .8.533 1.333 1.333 1.333.8 0 1.333-.533 1.333-1.333v-8c0-.8-.533-1.334-1.333-1.334z\",\n    fill: \"#fff\"\n  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"add to basket button\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"add to loves button with hover animation\"))))))), document.getElementById('portal'));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuickLookModal);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/QuickLookModal/QuickLookModal.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/QuickLookModal/QuickLookModalStyles.js":
+/*!******************************************************************!*\
+  !*** ./client/components/QuickLookModal/QuickLookModalStyles.js ***!
+  \******************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar QuickLookModalStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"QuickLookModalStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuickLookModalStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/QuickLookModal/QuickLookModalStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/RightArrow/RightArrow.jsx":
+/*!*****************************************************!*\
+  !*** ./client/components/RightArrow/RightArrow.jsx ***!
+  \*****************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _RightArrowStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RightArrowStyles.js */ \"./client/components/RightArrow/RightArrowStyles.js\");\n\n\n\nvar RightArrow = function RightArrow(props) {\n  var disabled = props.similarPage >= 3;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"button\", {\n    className: disabled ? 'arrow disabled' : 'arrow',\n    onClick: function onClick() {\n      return props.handleArrowClick('rightArrow');\n    },\n    name: \"rightArrow\",\n    \"data-testid\": \"rightArrow\",\n    disabled: disabled\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"svg\", {\n    viewBox: \"0 0 16 32\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"path\", {\n    d: \"M13.8 15.952L.3 30.28c-.1.1-.3.398-.3.697 0 .497.4.995.9.995.3 0 .5-.2.6-.3L15.6 16.75c.2-.298.4-.497.4-.796 0-.298-.1-.398-.2-.497l-.1-.1L1.5.33C1.4.23 1.2.032.9.032c-.5 0-.9.497-.9.995 0 .298.2.497.3.696l13.5 14.23z\"\n  }))));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RightArrow);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/RightArrow/RightArrow.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/RightArrow/RightArrowStyles.js":
+/*!**********************************************************!*\
+  !*** ./client/components/RightArrow/RightArrowStyles.js ***!
+  \**********************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar RightArrowStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"RightArrowStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RightArrowStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/RightArrow/RightArrowStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SectionDivider/SectionDivider.jsx":
+/*!*************************************************************!*\
+  !*** ./client/components/SectionDivider/SectionDivider.jsx ***!
+  \*************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SectionDividerStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SectionDividerStyles.js */ \"./client/components/SectionDivider/SectionDividerStyles.js\");\n\n\n\nvar SectionDivider = function SectionDivider(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"sectionDivider\"\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SectionDivider);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SectionDivider/SectionDivider.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SectionDivider/SectionDividerStyles.js":
+/*!******************************************************************!*\
+  !*** ./client/components/SectionDivider/SectionDividerStyles.js ***!
+  \******************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SectionDividerStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SectionDividerStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SectionDividerStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SectionDivider/SectionDividerStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProduct/SuggestedProduct.jsx":
+/*!*****************************************************************!*\
+  !*** ./client/components/SuggestedProduct/SuggestedProduct.jsx ***!
+  \*****************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _CompositeProductImage_CompositeProductImage_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CompositeProductImage/CompositeProductImage.jsx */ \"./client/components/CompositeProductImage/CompositeProductImage.jsx\");\n/* harmony import */ var _SuggestedProductDetails_SuggestedProductDetails_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SuggestedProductDetails/SuggestedProductDetails.jsx */ \"./client/components/SuggestedProductDetails/SuggestedProductDetails.jsx\");\n/* harmony import */ var _SuggestedProductStyles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SuggestedProductStyles.js */ \"./client/components/SuggestedProduct/SuggestedProductStyles.js\");\n\n\n\n\n\nvar SuggestedProduct = function SuggestedProduct(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CompositeProductImage_CompositeProductImage_jsx__WEBPACK_IMPORTED_MODULE_1__.default, {\n    product: props.similarProduct\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductDetails_SuggestedProductDetails_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n    product: props.similarProduct\n  }));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProduct);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProduct/SuggestedProduct.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProduct/SuggestedProductStyles.js":
+/*!**********************************************************************!*\
+  !*** ./client/components/SuggestedProduct/SuggestedProductStyles.js ***!
+  \**********************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SuggestedProductStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SuggestedProductStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProduct/SuggestedProductStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductDetails/SuggestedProductDetails.jsx":
+/*!*******************************************************************************!*\
+  !*** ./client/components/SuggestedProductDetails/SuggestedProductDetails.jsx ***!
+  \*******************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SuggestedProductDetailsStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SuggestedProductDetailsStyles.js */ \"./client/components/SuggestedProductDetails/SuggestedProductDetailsStyles.js\");\n\n\n\nvar SuggestedProductDetails = function SuggestedProductDetails(props) {\n  var formatter = new Intl.NumberFormat('en-US', {\n    style: 'currency',\n    currency: 'USD',\n    minimumFractionDigits: 2\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"productDetails\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n    className: \"brandName centeredText\"\n  }, props.product.brand), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"p\", {\n    className: \"centeredText\"\n  }, props.product.product_name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"price centeredText\"\n  }, formatter.format(props.product.price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-top\",\n    style: {\n      width: props.product.average_rating / 5 * 100 + '%'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"star-ratings-css-bottom\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, \"\\u2605\"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"span\", null, props.product.review_count));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductDetails);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductDetails/SuggestedProductDetails.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductDetails/SuggestedProductDetailsStyles.js":
+/*!************************************************************************************!*\
+  !*** ./client/components/SuggestedProductDetails/SuggestedProductDetailsStyles.js ***!
+  \************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SuggestedProductDetailsStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SuggestedProductDetailsStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductDetailsStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductDetails/SuggestedProductDetailsStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsCarousel/SuggestedProductsCarousel.jsx":
+/*!***********************************************************************************!*\
+  !*** ./client/components/SuggestedProductsCarousel/SuggestedProductsCarousel.jsx ***!
+  \***********************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _CarouselPageIndicator_CarouselPageIndicator_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CarouselPageIndicator/CarouselPageIndicator.jsx */ \"./client/components/CarouselPageIndicator/CarouselPageIndicator.jsx\");\n/* harmony import */ var _SuggestedProduct_SuggestedProduct_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SuggestedProduct/SuggestedProduct.jsx */ \"./client/components/SuggestedProduct/SuggestedProduct.jsx\");\n/* harmony import */ var _LeftArrow_LeftArrow_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../LeftArrow/LeftArrow.jsx */ \"./client/components/LeftArrow/LeftArrow.jsx\");\n/* harmony import */ var _RightArrow_RightArrow_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../RightArrow/RightArrow.jsx */ \"./client/components/RightArrow/RightArrow.jsx\");\n/* harmony import */ var _SuggestedProductsCarouselStyles_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SuggestedProductsCarouselStyles.js */ \"./client/components/SuggestedProductsCarousel/SuggestedProductsCarouselStyles.js\");\n\n\n\n\n\n\n\nvar SuggestedProductsCarousel = function SuggestedProductsCarousel(props) {\n  if (props.similarDisplayed.length === 0) {\n    return null;\n  }\n\n  var suggestedProducts = props.similarDisplayed.map(function (item, index) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProduct_SuggestedProduct_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n      similarProduct: item,\n      key: index\n    });\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"carouselAndPgIndicator\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"suggestedProductsCarousel\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"arrowContainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_LeftArrow_LeftArrow_jsx__WEBPACK_IMPORTED_MODULE_3__.default, {\n    handleArrowClick: props.handleArrowClick,\n    similarPage: props.similarPage\n  })), suggestedProducts, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"arrowContainer\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_RightArrow_RightArrow_jsx__WEBPACK_IMPORTED_MODULE_4__.default, {\n    handleArrowClick: props.handleArrowClick,\n    similarPage: props.similarPage\n  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CarouselPageIndicator_CarouselPageIndicator_jsx__WEBPACK_IMPORTED_MODULE_1__.default, null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsCarousel);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsCarousel/SuggestedProductsCarousel.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsCarousel/SuggestedProductsCarouselStyles.js":
+/*!****************************************************************************************!*\
+  !*** ./client/components/SuggestedProductsCarousel/SuggestedProductsCarouselStyles.js ***!
+  \****************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SuggestedProductsCarouselStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SuggestedProductsCarouselStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsCarouselStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsCarousel/SuggestedProductsCarouselStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsContainer/SuggestedProductsContainer.jsx":
+/*!*************************************************************************************!*\
+  !*** ./client/components/SuggestedProductsContainer/SuggestedProductsContainer.jsx ***!
+  \*************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SuggestedProductsHeader_SuggestedProductsHeader_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SuggestedProductsHeader/SuggestedProductsHeader.jsx */ \"./client/components/SuggestedProductsHeader/SuggestedProductsHeader.jsx\");\n/* harmony import */ var _SuggestedProductsCarousel_SuggestedProductsCarousel_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SuggestedProductsCarousel/SuggestedProductsCarousel.jsx */ \"./client/components/SuggestedProductsCarousel/SuggestedProductsCarousel.jsx\");\n/* harmony import */ var _SuggestedProductsFooter_SuggestedProductsFooter_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../SuggestedProductsFooter/SuggestedProductsFooter.jsx */ \"./client/components/SuggestedProductsFooter/SuggestedProductsFooter.jsx\");\n/* harmony import */ var _SuggestedProductsContainerStyles_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SuggestedProductsContainerStyles.js */ \"./client/components/SuggestedProductsContainer/SuggestedProductsContainerStyles.js\");\n\n\n\n\n\n\nvar SuggestedProductsContainer = function SuggestedProductsContainer(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"body\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsHeader_SuggestedProductsHeader_jsx__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsCarousel_SuggestedProductsCarousel_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n    similarDisplayed: props.similarDisplayed,\n    handleArrowClick: props.handleArrowClick,\n    similarPage: props.similarPage\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SuggestedProductsFooter_SuggestedProductsFooter_jsx__WEBPACK_IMPORTED_MODULE_3__.default, null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsContainer);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsContainer/SuggestedProductsContainer.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsContainer/SuggestedProductsContainerStyles.js":
+/*!******************************************************************************************!*\
+  !*** ./client/components/SuggestedProductsContainer/SuggestedProductsContainerStyles.js ***!
+  \******************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SuggestedProductsContainerStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SuggestedProductsContainerStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsContainerStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsContainer/SuggestedProductsContainerStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsFooter/SuggestedProductsFooter.jsx":
+/*!*******************************************************************************!*\
+  !*** ./client/components/SuggestedProductsFooter/SuggestedProductsFooter.jsx ***!
+  \*******************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SectionDivider_SectionDivider_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SectionDivider/SectionDivider.jsx */ \"./client/components/SectionDivider/SectionDivider.jsx\");\n/* harmony import */ var _SuggestedProductsFooterStyles_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SuggestedProductsFooterStyles.js */ \"./client/components/SuggestedProductsFooter/SuggestedProductsFooterStyles.js\");\n\n\n\n\nvar SuggestedProductsFooter = function SuggestedProductsFooter(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SectionDivider_SectionDivider_jsx__WEBPACK_IMPORTED_MODULE_1__.default, null));\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsFooter);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsFooter/SuggestedProductsFooter.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsFooter/SuggestedProductsFooterStyles.js":
+/*!************************************************************************************!*\
+  !*** ./client/components/SuggestedProductsFooter/SuggestedProductsFooterStyles.js ***!
+  \************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SuggestedProductsFooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SuggestedProductsFooterStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsFooterStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsFooter/SuggestedProductsFooterStyles.js?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsHeader/SuggestedProductsHeader.jsx":
+/*!*******************************************************************************!*\
+  !*** ./client/components/SuggestedProductsHeader/SuggestedProductsHeader.jsx ***!
+  \*******************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SuggestedProductsHeaderStyles_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SuggestedProductsHeaderStyles.js */ \"./client/components/SuggestedProductsHeader/SuggestedProductsHeaderStyles.js\");\n\n\n\nvar SuggestedProductsHeader = function SuggestedProductsHeader(props) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", {\n    className: \"title\"\n  }, \"Similar Products\");\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsHeader);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsHeader/SuggestedProductsHeader.jsx?");
+
+/***/ }),
+
+/***/ "./client/components/SuggestedProductsHeader/SuggestedProductsHeaderStyles.js":
+/*!************************************************************************************!*\
+  !*** ./client/components/SuggestedProductsHeader/SuggestedProductsHeaderStyles.js ***!
+  \************************************************************************************/
+/*! namespace exports */
+/*! export default [provided] [no usage info] [missing usage info prevents renaming] */
+/*! other exports [not provided] [no usage info] */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n\nvar SuggestedProductsHeaderStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.default.div.withConfig({\n  displayName: \"SuggestedProductsHeaderStyles\"\n})([\".hey{cursor:pointer;background-color:green;height:100px;width:100px;}\"]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SuggestedProductsHeaderStyles);\n\n//# sourceURL=webpack://similarproductsservice/./client/components/SuggestedProductsHeader/SuggestedProductsHeaderStyles.js?");
 
 /***/ }),
 
@@ -658,7 +913,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _app_app_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.jsx */ \"./client/app/app.jsx\");\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_app_app_jsx__WEBPACK_IMPORTED_MODULE_2__.default, null), document.getElementById('suggested-products'));\n\n//# sourceURL=webpack://similarproductsservice/./client/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var _app_app_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.jsx */ \"./client/app/app.jsx\");\n/* harmony import */ var _IndexStyles_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./IndexStyles.js */ \"./client/IndexStyles.js\");\n\n\n\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_app_app_jsx__WEBPACK_IMPORTED_MODULE_2__.default, null), document.getElementById('suggested-products'));\n\n//# sourceURL=webpack://similarproductsservice/./client/index.js?");
 
 /***/ }),
 

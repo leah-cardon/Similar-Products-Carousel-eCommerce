@@ -1,4 +1,5 @@
 import React from 'react';
+import SuggestedProductDetailsStyles from './SuggestedProductDetailsStyles.js';
 
 const SuggestedProductDetails = (props) => {
 

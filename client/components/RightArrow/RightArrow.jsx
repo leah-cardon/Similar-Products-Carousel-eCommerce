@@ -1,4 +1,5 @@
 import React from 'react';
+import RightArrowStyles from './RightArrowStyles.js';
 
 const RightArrow = (props) => {
 

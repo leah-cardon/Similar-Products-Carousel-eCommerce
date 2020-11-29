@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ProductPhoto from './ProductPhoto.jsx';
+import ProductPhoto from '../ProductPhoto/ProductPhoto.jsx';
+import QuickLookModalStyles from './QuickLookModalStyles.js';
 
 const MODAL_STYLES = {
   position: 'fixed',

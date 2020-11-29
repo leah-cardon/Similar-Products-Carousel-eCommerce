@@ -1,4 +1,5 @@
 import React from 'react';
+import SuggestedProductsHeaderStyles from './SuggestedProductsHeaderStyles.js';
 
 const SuggestedProductsHeader = (props) => {
 

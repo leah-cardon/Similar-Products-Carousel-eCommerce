@@ -1,4 +1,5 @@
 import React from 'react';
+import QuickLookButtonStyles from './QuickLookButtonStyles.js';
 
 const QuickLookButton = (props) => {
 

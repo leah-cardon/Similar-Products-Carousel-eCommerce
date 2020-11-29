@@ -1,6 +1,7 @@
 import React from 'react';
+import LovedHeartStyles from './LovedHeartStyles.js';
 
-const FILL_ME_IN = (props) => {
+const LovedHeart = (props) => {
 
   return (
     <div></div>
@@ -8,4 +9,4 @@ const FILL_ME_IN = (props) => {
 
 };
 
-export default FILL_ME_IN;
+export default LovedHeart;

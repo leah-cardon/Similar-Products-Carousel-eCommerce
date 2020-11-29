@@ -1,8 +1,9 @@
 import React from 'react';
-import CarouselPageIndicator from './CarouselPageIndicator.jsx';
-import SuggestedProduct from './SuggestedProduct.jsx';
-import LeftArrow from './LeftArrow.jsx';
-import RightArrow from './RightArrow.jsx';
+import CarouselPageIndicator from '../CarouselPageIndicator/CarouselPageIndicator.jsx';
+import SuggestedProduct from '../SuggestedProduct/SuggestedProduct.jsx';
+import LeftArrow from '../LeftArrow/LeftArrow.jsx';
+import RightArrow from '../RightArrow/RightArrow.jsx';
+import SuggestedProductsCarouselStyles from './SuggestedProductsCarouselStyles.js';
 
 const SuggestedProductsCarousel = (props) => {
 

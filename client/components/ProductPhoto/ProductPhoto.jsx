@@ -1,5 +1,6 @@
 import React from 'react';
-import NewBanner from './NewBanner.jsx';
+import NewBanner from '../NewBanner/NewBanner.jsx';
+import ProductPhotoStyles from './ProductPhotoStyles.js';
 
 const ProductPhoto = (props) => {
 

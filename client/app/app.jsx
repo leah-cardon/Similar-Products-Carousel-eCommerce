@@ -4,7 +4,7 @@ import axios from 'axios';
 import AppStyles from './AppStyles.js';
 
 
-import SuggestedProductsContainer from '../SuggestedProductsContainer.jsx';
+import SuggestedProductsContainer from '../components/SuggestedProductsContainer/SuggestedProductsContainer.jsx';
 
 
 class App extends React.Component {

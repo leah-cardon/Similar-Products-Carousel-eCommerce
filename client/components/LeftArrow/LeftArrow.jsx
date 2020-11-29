@@ -1,4 +1,5 @@
 import React from 'react';
+import LeftArrowStyles from './LeftArrowStyles.js';
 
 const LeftArrow = (props) => {
 

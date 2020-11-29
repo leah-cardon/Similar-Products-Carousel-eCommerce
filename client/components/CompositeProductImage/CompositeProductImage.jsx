@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import ProductPhoto from './ProductPhoto.jsx';
-import QuickLookButton from './QuickLookButton.jsx';
-import QuickLookModal from './QuickLookModal.jsx';
+import ProductPhoto from '../ProductPhoto/ProductPhoto.jsx';
+import QuickLookButton from '../QuickLookButton/QuickLookButton.jsx';
+import QuickLookModal from '../QuickLookModal/QuickLookModal.jsx';
+import CompositeProductImageStyles from './CompositeProductImageStyles.js';
 
 const CompositeProductImage = (props) => {
 
