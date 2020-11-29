@@ -103,8 +103,21 @@ const QuickLookModal = (props) => {
             <div className='modal modalBuy'>
               <div className='price modal modalPrice'>{formatter.format(props.product.price)}</div>
               <div className='modal modalBuyButtons'>
-                <div>
-                  dropdown 1-10
+                <div className='relative'>
+                  <select className='modal modalDropdown'>
+                    <option value='1'>1</option>
+                    <option value='2'>2</option>
+                    <option value='3'>3</option>
+                    <option value='4'>4</option>
+                    <option value='5'>5</option>
+                    <option value='6'>6</option>
+                    <option value='7'>7</option>
+                    <option value='8'>8</option>
+                    <option value='9'>9</option>
+                    <option value='10'>10</option>
+                  </select>
+                  <span className="modalDropdownArrow" direction="down"></span>
+                  <svg viewBox="0 0 24 24"><g><path d="M12 5.333c-.8 0-1.333.534-1.333 1.334v8c0 .8.533 1.333 1.333 1.333.8 0 1.333-.533 1.333-1.333v-8c0-.8-.533-1.334-1.333-1.334z" fill="#fff"></path></g></svg>
                 </div>
                 <div>
                   <div>add to basket button</div>
