@@ -5,14 +5,16 @@ import ProductPhotoStyles from './ProductPhotoStyles.js';
 const ProductPhoto = (props) => {
 
   return (
-    <div>
-      <NewBanner new={props.product.new}
-      size={props.size} />
-      <img
-      src={props.product.image_url}
-      className={props.size + 'Photo'}
-       ></img>
-    </div>
+    <ProductPhotoStyles>
+      <div>
+        <NewBanner new={props.product.new}
+        size={props.size} />
+        <img
+        src={props.product.image_url}
+        className={props.size + 'Photo'}
+        ></img>
+      </div>
+    </ProductPhotoStyles>
   );
 
 };

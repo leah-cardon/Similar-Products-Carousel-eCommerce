@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 
-const ProductPhotoStyles = styled.div`
-.hey {
-  cursor: pointer;
-  background-color: green;
-  height: 100px;
-  width: 100px;
+const ProductPhotoStyles = styled.img`
+.modalPhoto {
+  height: 300px;
+  width: 300px;
+  display: block;
+}
+.previewPhoto {
+  height: 135px;
+  width: 135px;
 }
 `;
 

@@ -23,11 +23,6 @@ div {
   padding: .5em;
 }
 
-.previewPhoto {
-  height: 135px;
-  width: 135px;
-}
-
 .productDetails {
   font-family: 'Helvetica Neue';
   font-size: 15px;
@@ -91,12 +86,6 @@ div {
   font-family: georgia, times, serif;
   font-size: 24px;
   text-align: center;
-}
-
-.modalPhoto {
-  height: 300px;
-  width: 300px;
-  display: block;
 }
 
 .sectionDivider {
