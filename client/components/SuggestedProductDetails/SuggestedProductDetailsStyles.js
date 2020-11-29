@@ -4,6 +4,9 @@ const SuggestedProductDetailsStyles = styled.div`
 .brandName {
   font-weight: 700;
 }
+.centeredText {
+  text-align: center;
+}
 .star-ratings-css {
   display: inline-block;
   unicode-bidi: bidi-override;

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const SectionDividerStyles = styled.div`
-.hey {
-  cursor: pointer;
-  background-color: green;
-  height: 100px;
-  width: 100px;
+.sectionDivider {
+  border-bottom: 1px solid;
+  border-color: #eee;
+  margin-left: 0;
+  margin-right: 0;
 }
 `;
 

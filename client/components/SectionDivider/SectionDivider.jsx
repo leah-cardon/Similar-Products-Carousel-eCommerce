@@ -4,7 +4,9 @@ import SectionDividerStyles from './SectionDividerStyles.js';
 const SectionDivider = (props) => {
 
   return (
-    <div className='sectionDivider'></div>
+    <SectionDividerStyles>
+      <div className='sectionDivider'></div>
+    </SectionDividerStyles>
   );
 
 };
