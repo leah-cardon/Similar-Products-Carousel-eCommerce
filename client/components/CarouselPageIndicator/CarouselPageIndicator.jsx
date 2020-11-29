@@ -1,4 +1,5 @@
 import React from 'react';
+import CarouselPageIndicatorStyles from './CarouselPageIndicatorStyles.js';
 
 const CarouselPageIndicator = (props) => {
 
