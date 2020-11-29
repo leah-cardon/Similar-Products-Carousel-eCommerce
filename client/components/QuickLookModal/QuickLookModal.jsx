@@ -3,31 +3,6 @@ import ReactDOM from 'react-dom';
 import ProductPhoto from '../ProductPhoto/ProductPhoto.jsx';
 import QuickLookModalStyles from './QuickLookModalStyles.js';
 
-const MODAL_STYLES = {
-  position: 'fixed',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  backgroundColor: '#FFF',
-  padding: '16px 16px 32px',
-  display: 'flex',
-  'flex-direction': 'column',
-  'justify-content': 'flex-start',
-  zIndex: 1001,
-  'max-width': '1012px',
-  height: 'auto',
-  padding: '24px 16px'
-}
-
-const OVERLAY_STYLES = {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: 'rgba(0, 0, 0, .15)',
-  zIndex: 1000
-}
 
 const QuickLookModal = (props) => {
 
@@ -49,8 +24,8 @@ const QuickLookModal = (props) => {
 
   return ReactDOM.createPortal(
     <>
-      <div style={OVERLAY_STYLES} onClick={props.onClose} />
-        <div className='modalContainer' style={MODAL_STYLES} >
+      <div className='modalOverlay' onClick={props.onClose} />
+        <div className='modalContainer'  >
           <button
             className='modalX'
             onClick={props.onClose}>
