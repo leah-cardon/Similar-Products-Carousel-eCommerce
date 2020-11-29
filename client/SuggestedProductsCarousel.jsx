@@ -15,16 +15,22 @@ const SuggestedProductsCarousel = (props) => {
   });
 
   return (
-    <div className='suggestedProductsCarousel'>
-      <LeftArrow
-        handleArrowClick={props.handleArrowClick}
-        similarPage={props.similarPage}
-      />
-      {suggestedProducts}
-      <RightArrow
-        handleArrowClick={props.handleArrowClick}
-        similarPage={props.similarPage}
-      />
+    <div className='carouselAndPgIndicator'>
+      <div className='suggestedProductsCarousel'>
+        <div className='arrowContainer'>
+          <LeftArrow
+            handleArrowClick={props.handleArrowClick}
+            similarPage={props.similarPage}
+          />
+        </div>
+        {suggestedProducts}
+        <div className='arrowContainer'>
+          <RightArrow
+            handleArrowClick={props.handleArrowClick}
+            similarPage={props.similarPage}
+          />
+        </div>
+      </div>
       <CarouselPageIndicator />
     </div>
   );

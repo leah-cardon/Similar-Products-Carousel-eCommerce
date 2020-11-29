@@ -23,6 +23,11 @@ div {
   padding: .5em;
 }
 
+.carouselAndPgIndicator {
+  display: grid;
+  grid-template-rows: 100% 20px;
+}
+
 .suggestedProductsCarousel {
   display: grid;
   grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
@@ -88,8 +93,6 @@ div {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  /* opacity: 0; */
-  /* transition: opacity 0.2s ease 0s; */
   text-align: center;
   line-height: 1;
   font-weight: 500;
@@ -97,9 +100,7 @@ div {
   padding-bottom: 8px;
   font-size: 11px;
   text-transform: uppercase;
-  /* cursor: pointer; */
   border-radius: 0;
-  /* border-color: #736b5e; */
 }
 
 #quickLookHover {
@@ -110,28 +111,20 @@ div {
   position: relative;
 }
 
-.rightArrow {
-  font-size: 36px;
-  line-height: 0;
-  height: 135px;
-  overflow: hidden;
-  position: absolute;
-  text-align: right;
-  right: 0px;
-  top: 0px;
+.arrow {
+  width: 18px;
+  height: 36px;
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  height: 220px;
   width: 32px;
 }
 
-#leftArrow {
-  font-size: 36px;
-  line-height: 0;
-  height: 135px;
-  overflow: hidden;
-  position: absolute;
-  text-align: left;
-  right: 0px;
-  top: 0px;
-  width: 32px;
+.disabled {
+  opacity: 8%;
 }
 
 .title {
