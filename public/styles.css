@@ -23,16 +23,6 @@ div {
   padding: .5em;
 }
 
-.carouselAndPgIndicator {
-  display: grid;
-  grid-template-rows: 100% 20px;
-}
-
-.suggestedProductsCarousel {
-  display: grid;
-  grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
-}
-
 .previewPhoto {
   height: 135px;
   width: 135px;
@@ -90,13 +80,6 @@ div {
 .arrow {
   width: 18px;
   height: 36px;
-}
-
-.arrowContainer {
-  display: flex;
-  align-items: center;
-  height: 220px;
-  width: 32px;
 }
 
 .disabled {
