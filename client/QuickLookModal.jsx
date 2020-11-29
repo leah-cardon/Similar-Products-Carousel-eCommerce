@@ -49,19 +49,19 @@ const QuickLookModal = (props) => {
   return ReactDOM.createPortal(
     <>
       <div style={OVERLAY_STYLES} onClick={props.onClose} />
-        <div className='modal modalContainer' style={MODAL_STYLES} >
+        <div className='modalContainer' style={MODAL_STYLES} >
           <button
             className='modalX'
             onClick={props.onClose}>
             X
           </button>
-          <div className='modal photoAndDetailsModal'>
+          <div className='photoAndDetailsModal'>
             <ProductPhoto
             product={props.product}
             size='modal'
             className='modalPhotoBox'
             />
-            <div className='modal'>
+            <div>
               <div className='brandName'>{props.product.brand}</div>
               <div>{props.product.product_name}</div>
               <div className='detailsSizeAndItem'>SIZE {props.product.sizes[0]}  •  ITEM {props.product.product_id}</div>
@@ -83,7 +83,7 @@ const QuickLookModal = (props) => {
               </div>
             </div>
           </div>
-          <div className='modal footerModal'>
+          <div className='footerModal'>
             <div>
               <div className="star-ratings-css">
                 <div className="star-ratings-css-top" style={{width: (props.product.average_rating / 5 * 100)+ '%'}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
@@ -100,11 +100,11 @@ const QuickLookModal = (props) => {
                 {props.product.loves} loves
               </span>
             </div>
-            <div className='modal modalBuy'>
-              <div className='price modal modalPrice'>{formatter.format(props.product.price)}</div>
-              <div className='modal modalBuyButtons'>
+            <div className='modalBuy'>
+              <div className='price modalPrice'>{formatter.format(props.product.price)}</div>
+              <div className='modalBuyButtons'>
                 <div className='relative'>
-                  <select className='modal modalDropdown'>
+                  <select className='modalDropdown'>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
