@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const SuggestedProductStyles = styled.div`
-.hey {
-  cursor: pointer;
-  background-color: green;
-  height: 100px;
-  width: 100px;
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 `;
 

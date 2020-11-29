@@ -9,16 +9,22 @@ const CompositeProductImage = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='compositeImage'>
-      <ProductPhoto
-        size='preview'
-        product={props.product}
-       />
-      <button
-        className='quickLook' onClick={() => setIsOpen(true)}
-        >QUICK LOOK</button>
-      <QuickLookModal product={props.product} open={isOpen} onClose={() => setIsOpen(false)}></QuickLookModal>
-    </div>
+    <CompositeProductImageStyles>
+      <div className='compositeImage'>
+        <ProductPhoto
+          size='preview'
+          product={props.product}
+        />
+        <div>
+          <button
+            className='quickLookButton' onClick={() => setIsOpen(true)}
+          >
+            QUICK LOOK
+          </button>
+        </div>
+        <QuickLookModal product={props.product} open={isOpen} onClose={() => setIsOpen(false)}></QuickLookModal>
+      </div>
+    </CompositeProductImageStyles>
   );
 
 };

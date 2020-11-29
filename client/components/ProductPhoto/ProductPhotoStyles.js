@@ -9,6 +9,7 @@ const ProductPhotoStyles = styled.div`
 .previewPhoto {
   height: 135px;
   width: 135px;
+  display: block;
 }
 `;
 

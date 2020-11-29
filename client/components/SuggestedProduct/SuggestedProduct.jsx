@@ -6,7 +6,7 @@ import SuggestedProductStyles from './SuggestedProductStyles.js';
 const SuggestedProduct = (props) => {
 
   return (
-    <div>
+    <div className='productContainer'>
       <CompositeProductImage product={props.similarProduct} />
       <SuggestedProductDetails product={props.similarProduct} />
     </div>);

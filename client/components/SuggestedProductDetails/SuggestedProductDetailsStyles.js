@@ -33,6 +33,10 @@ const SuggestedProductDetailsStyles = styled.div`
 .boldText {
   font-weight: 700;
 }
+.productDetails {
+  font-family: 'Helvetica Neue';
+  font-size: 15px;
+}
 `;
 
 export default SuggestedProductDetailsStyles;
