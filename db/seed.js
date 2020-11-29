@@ -122,3 +122,5 @@ db.removeAllFromProducts().then(
   () => {
     db.insertAllIntoProducts(generateProducts(100));
   });
+
+console.log('database seeding complete!');

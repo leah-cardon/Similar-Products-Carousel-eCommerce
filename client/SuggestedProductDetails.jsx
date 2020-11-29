@@ -14,11 +14,11 @@ const SuggestedProductDetails = (props) => {
         <p className='brandName'>
           {props.product.brand}
         </p>
-        <p>
+        <p className='centeredText'>
           {props.product.product_name}
         </p>
       </div>
-      <div className='price'>
+      <div className='price centeredText'>
         {formatter.format(props.product.price)}
       </div>
       <div className="star-ratings-css">
