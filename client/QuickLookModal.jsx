@@ -78,7 +78,12 @@ const QuickLookModal = (props) => {
             </div>
           </div>
           <div className='modal footerModal'>footer
-            <div> stars reviews | heart and # of loves </div>
+            <div>
+              <div className="star-ratings-css">
+                <div className="star-ratings-css-top" style={{width: (props.product.average_rating / 5 * 100)+ '%'}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div>
+              stars reviews | heart and # of loves </div>
             <div>price</div>
             <div>
               dropdown 1-10
