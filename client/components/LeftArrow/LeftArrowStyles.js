@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 const LeftArrowStyles = styled.div`
-.hey {
-  cursor: pointer;
-  background-color: green;
-  height: 100px;
-  width: 100px;
-}
+  .arrow {
+    width: 18px;
+    height: 36px;
+  }
+
+  .disabled {
+    opacity: 8%;
+  }
 `;
 
 export default LeftArrowStyles;

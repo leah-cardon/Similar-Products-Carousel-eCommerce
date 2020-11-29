@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-const RightArrowStyles = styled.div`
-.hey {
-  cursor: pointer;
-  background-color: green;
-  height: 100px;
-  width: 100px;
-}
+const RightArrowStyles = styled.button`
+  .arrow {
+    width: 18px;
+    height: 36px;
+  }
+
+  .disabled {
+    opacity: 8%;
+  }
 `;
 
 export default RightArrowStyles;

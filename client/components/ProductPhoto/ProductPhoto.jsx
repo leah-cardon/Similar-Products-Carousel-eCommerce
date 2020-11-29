@@ -12,7 +12,7 @@ const ProductPhoto = (props) => {
         <img
         src={props.product.image_url}
         className={props.size + 'Photo'}
-        ></img>
+        />
       </div>
     </ProductPhotoStyles>
   );
