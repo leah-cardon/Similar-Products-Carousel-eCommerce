@@ -46,6 +46,14 @@ div {
   font-weight: 700;
 }
 
+.modalPrice {
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+  min-height: 44px;
+  display: block;
+}
+
 .previewNew {
   background-color: black;
   position: absolute;
@@ -185,9 +193,8 @@ div {
 }
 
 .footerModal {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 324px auto;
   width: 100%;
 }
 
@@ -253,4 +260,38 @@ div {
 
 .centeredText {
   text-align: center;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+.dividerText {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ccc;
+}
+
+.modalHeart {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  vertical-align: text-bottom;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 1.125em;
+  margin-right: 5px;
+}
+
+.modalBuy {
+  display: grid;
+  grid-template-columns: auto 226px;
+}
+
+.modalBuyButtons {
+  display: grid;
+  grid-template-columns: 58px 168px;
 }

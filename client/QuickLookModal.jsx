@@ -40,6 +40,12 @@ const QuickLookModal = (props) => {
     );
   }
 
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2
+  });
+
   return ReactDOM.createPortal(
     <>
       <div style={OVERLAY_STYLES} onClick={props.onClose} />
@@ -77,19 +83,35 @@ const QuickLookModal = (props) => {
               </div>
             </div>
           </div>
-          <div className='modal footerModal'>footer
+          <div className='modal footerModal'>
             <div>
               <div className="star-ratings-css">
                 <div className="star-ratings-css-top" style={{width: (props.product.average_rating / 5 * 100)+ '%'}}><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                 <div className="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
               </div>
-              stars reviews | heart and # of loves </div>
-            <div>price</div>
-            <div>
-              dropdown 1-10
+              <span className="boldText">
+                {props.product.review_count} reviews
+              </span>
+              <span className='dividerText'> | </span>
+              <span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" class="modalHeart"><path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path></svg>
+              </span>
+              <span className="boldText">
+                {props.product.loves} loves
+              </span>
             </div>
-            <div>add to basket button</div>
-            <div>add to loves button with hover animation</div>
+            <div className='modal modalBuy'>
+              <div className='price modal modalPrice'>{formatter.format(props.product.price)}</div>
+              <div className='modal modalBuyButtons'>
+                <div>
+                  dropdown 1-10
+                </div>
+                <div>
+                  <div>add to basket button</div>
+                  <div>add to loves button with hover animation</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </>,
