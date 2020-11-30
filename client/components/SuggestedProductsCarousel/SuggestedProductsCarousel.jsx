@@ -12,10 +12,6 @@ const SuggestedProductsCarousel = (props) => {
   }
   const similar = props.similarDisplayed || [];
 
-  const suggestedProducts = similar.map((item, index) => <SuggestedProduct
-      key={index}
-      similarProduct={item} />);
-
   return (
     <SuggestedProductsCarouselStyles>
       <div className='carouselAndPgIndicator'>
@@ -26,7 +22,11 @@ const SuggestedProductsCarousel = (props) => {
               similarPage={props.similarPage}
             />
           </div>
-          {suggestedProducts}
+          {
+            similar.map((item, index) => <SuggestedProduct
+              key={index}
+              similarProduct={item} />)
+          }
           <div className='arrowContainer'>
             <RightArrow
               handleArrowClick={props.handleArrowClick}
