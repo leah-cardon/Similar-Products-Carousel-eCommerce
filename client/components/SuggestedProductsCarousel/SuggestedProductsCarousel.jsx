@@ -11,6 +11,7 @@ const SuggestedProductsCarousel = (props) => {
     return null;
   }
   const similar = props.similarDisplayed || [];
+console.log(similar);
 
   return (
     <SuggestedProductsCarouselStyles>
@@ -23,7 +24,7 @@ const SuggestedProductsCarousel = (props) => {
             />
           </div>
           {
-            similar.map((item, index) => <SuggestedProduct
+            Array.from(similar).map((item, index) => <SuggestedProduct
               key={index}
               similarProduct={item} />)
           }
