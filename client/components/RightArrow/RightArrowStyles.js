@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const RightArrowStyles = styled.button`
+const RightArrowStyles = styled.div`
   .arrow {
     width: 18px;
     height: 36px;
