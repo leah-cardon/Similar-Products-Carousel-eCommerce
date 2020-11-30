@@ -4,13 +4,46 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="styles.css">
     <style type="text/css">
-      html,
-      body {
-        height: 100%;
-        width: 100%;
+      * {
+        border-width: 0;
+        border-style: solid;
         margin: 0;
+        padding: 0;
+        background-color: transparent;
+        color: inherit;
+        font: inherit;
+        text-transform: inherit;
+        letter-spacing: inherit;
+        text-align: inherit;
+        text-decoration: none;
+        align-items: normal;
+        min-width: 0;
+        font-family: 'Helvetica Neue';
+      }
+
+      *, ::after, ::before {
+        box-sizing: border-box;
+      }
+
+      div {
+        padding: .5em;
+      }
+
+      .body {
+        box-sizing: content-box;
+        width: 980px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
       }
     </style>
   </head>
@@ -18,7 +51,7 @@
   <body>
     <div id="suggested-products"></div>
     <div id="portal"></div>
-    <script type="text/javascript" src="../public/main.js"></script>
+    <script type="text/jsx" src="../public/main.js"></script>
   </body>
 
 </html>

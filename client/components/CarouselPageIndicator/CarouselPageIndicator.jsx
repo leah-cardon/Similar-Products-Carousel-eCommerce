@@ -18,7 +18,6 @@ const CarouselPageIndicator = (props) => {
       </div>
     </CarouselPageIndicatorStyles>
   );
-
 };
 
 export default CarouselPageIndicator;

@@ -12,7 +12,7 @@ const QuickLookModal = (props) => {
 
   for (var i = 0; i < props.product.colors.length; i++) {
     colorBoxes.push(
-      <span>COLOR BOX    </span>
+      <span key={i}>COLOR BOX    </span>
     );
   }
 
@@ -71,7 +71,7 @@ const QuickLookModal = (props) => {
                 </span>
                 <span className='dividerText'> | </span>
                 <span>
-                  <svg aria-hidden="true" viewBox="0 0 24 24" class="modalHeart"><path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path></svg>
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="modalHeart"><path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path></svg>
                 </span>
                 <span className="boldText">
                   {props.product.loves} loves
