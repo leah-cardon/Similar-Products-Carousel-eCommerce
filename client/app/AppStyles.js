@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const AppStyles = styled.div`
+background-color: red;
 .hey {
   cursor: pointer;
   background-color: green;

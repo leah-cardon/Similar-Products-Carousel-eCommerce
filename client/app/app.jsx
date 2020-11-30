@@ -62,16 +62,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <AppStyles>
-        <SuggestedProductsContainer
-          similarDisplayed={this.state.similarDisplayed}
-          handleArrowClick={this.handleArrowClick}
-          similarPage={this.state.similarPage}
-        />
-      </AppStyles>
+      <SuggestedProductsContainer
+        similarDisplayed={this.state.similarDisplayed}
+        handleArrowClick={this.handleArrowClick}
+        similarPage={this.state.similarPage}
+      />
     )
   };
-
 }
 
 export default App;
