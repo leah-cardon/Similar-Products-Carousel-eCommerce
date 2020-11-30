@@ -34,6 +34,10 @@ app.get('/api/products/:id/similar', (req, res) => {
     });
 });
 
+// app.get('/*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../public/index.html'))
+// });
+
 app.get('/api/products/:id/youmayalsolike', (req, res) => {
   const id = (req.params.id === undefined) ? 2 : req.params.id;
   db.getSuggestedProducts(id, 'you_may_like')
