@@ -33,7 +33,7 @@ const SuggestedProductsCarousel = (props) => {
             />
           </div>
         </div>
-        <CarouselPageIndicator />
+        <CarouselPageIndicator similarPage={props.similarPage} />
       </div>
     </SuggestedProductsCarouselStyles>
   );

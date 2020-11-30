@@ -4,7 +4,19 @@ import CarouselPageIndicatorStyles from './CarouselPageIndicatorStyles.js';
 const CarouselPageIndicator = (props) => {
 
   return (
-    <div>carousel page indicator (dots)</div>
+    <CarouselPageIndicatorStyles>
+      <div className='dotsContainer'>
+        <button className={props.similarPage === 1 ? 'dotButton currentDot' : 'dotButton'}>
+        •
+        </button>
+        <button className={props.similarPage === 2 ? 'dotButton currentDot' : 'dotButton'}>
+        •
+        </button>
+        <button className={props.similarPage === 3 ? 'dotButton currentDot' : 'dotButton'}>
+        •
+        </button>
+      </div>
+    </CarouselPageIndicatorStyles>
   );
 
 };
