@@ -10,8 +10,9 @@ const SuggestedProductsCarousel = (props) => {
   if (props.similarDisplayed.length === 0) {
     return null;
   }
+  const similar = props.similarDisplayed || [];
 
-  const suggestedProducts = props.similarDisplayed.map((item, index) => {
+  const suggestedProducts = similar.map((item, index) => {
     return <SuggestedProduct similarProduct={item} key={index} />;
   });
 
