@@ -175,6 +175,39 @@ const QuickLookModalStyles = styled.div`
 .relative {
   position: relative;
 }
+.addToBasketButtonDiv {
+  margin-left: 8px;
+  width: 160px;
+  display: block;
+  top: -10px;
+}
+.addToBasketButton {
+  font-size: 14px;
+  padding: 0.25em 1.125em;
+  min-height: 44px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 1;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  outline: 0px;
+  box-sizing: border-box;
+  border-radius: 99999px;
+  appearance: none;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s ease 0s;
+  background-color: rgb(207, 17, 44);
+  display: flex;
+  width: 100%;
+  min-width: 5.5em;
+}
 `;
 
 export default QuickLookModalStyles;

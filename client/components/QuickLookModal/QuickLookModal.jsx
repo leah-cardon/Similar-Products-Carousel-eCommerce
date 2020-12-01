@@ -52,11 +52,11 @@ const QuickLookModal = (props) => {
                 </div>
                 <div>
                   COLOR: {props.product.colors[0].name} - {props.product.colors[0].description}
-                  <div>
+                  {/* <div>
                     color boxes container
                     each color box (image) with hover animation and selection box
                     {colorBoxes}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -97,8 +97,11 @@ const QuickLookModal = (props) => {
                     <svg viewBox="0 0 24 24"><g><path d="M12 5.333c-.8 0-1.333.534-1.333 1.334v8c0 .8.533 1.333 1.333 1.333.8 0 1.333-.533 1.333-1.333v-8c0-.8-.533-1.334-1.333-1.334z" fill="#fff"></path></g></svg>
                   </div>
                   <div>
-                    <div>add to basket button</div>
-                    <div>add to loves button with hover animation</div>
+                    <div className='addToBasketButtonDiv'>
+                      <button className='addToBasketButton'>
+                        Add to Basket
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
