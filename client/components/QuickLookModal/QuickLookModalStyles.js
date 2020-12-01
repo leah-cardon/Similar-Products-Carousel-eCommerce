@@ -179,7 +179,7 @@ const QuickLookModalStyles = styled.div`
   margin-left: 8px;
   width: 160px;
   display: block;
-  top: -10px;
+  padding: 0px;
 }
 .addToBasketButton {
   font-size: 14px;
