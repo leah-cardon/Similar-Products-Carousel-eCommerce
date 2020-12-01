@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ProductPhotoStyles = styled.div`
+const ProductPhotoStyles = styled.a`
 .modalPhoto {
   height: 300px;
   width: 300px;

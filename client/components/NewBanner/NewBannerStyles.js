@@ -11,7 +11,7 @@ const NewBannerStyles = styled.span`
   color: white;
   text-align: center;
   top: 30px;
-  left: -15px;
+  left: -10px;
 }
 
 .modalNew {
