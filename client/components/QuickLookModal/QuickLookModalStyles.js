@@ -208,6 +208,49 @@ const QuickLookModalStyles = styled.div`
   width: 100%;
   min-width: 5.5em;
 }
+.addToLovesButtonDiv {
+  display: block;
+  margin-top: 8px;
+  padding: 0px;
+}
+.addToLovesButton {
+  font-size: 14px;
+  padding: 0.25em 1.125em;
+  min-height: 44px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 1;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  outline: 0px;
+  box-sizing: border-box;
+  border-radius: 99999px;
+  appearance: none;
+  color: rgb(0, 0, 0);
+  border-color: currentcolor;
+  transition: color 0.2s ease 0s, border-color 0.2s ease 0s;
+  display: flex;
+  width: 100%;
+  min-width: 5.5em;
+}
+.addToLovesButtonSvg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  vertical-align: text-bottom;
+  fill: currentcolor;
+  flex-shrink: 0;
+  font-size: 1.5em;
+  margin-right: 0.375em;
+}
 `;
 
 export default QuickLookModalStyles;
