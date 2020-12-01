@@ -10,6 +10,8 @@ const NewBannerStyles = styled.span`
   font-size: 10px;
   color: white;
   text-align: center;
+  top: 30px;
+  left: -15px;
 }
 
 .modalNew {

@@ -24,6 +24,11 @@ const CompositeProductImageStyles = styled.div`
   }
   .compositeImage {
     position: relative;
+    display: grid;
+    width: 151.75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
   }
 `;
 

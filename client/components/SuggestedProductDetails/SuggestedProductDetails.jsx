@@ -23,7 +23,8 @@ const SuggestedProductDetails = (props) => {
         <div className='boldText centeredText'>
           {formatter.format(props.product.price)}
         </div>
-        <div className="star-ratings-css">
+        <div className='centerContent'>
+          <div className="star-ratings-css">
           <div
             className="star-ratings-css-top"
             style={{width: (props.product.average_rating / 5 * 100)+ '%'}}
@@ -47,6 +48,7 @@ const SuggestedProductDetails = (props) => {
           <span>
             {props.product.review_count}
           </span>
+        </div>
       </div>
     </SuggestedProductDetailsStyles>
   );

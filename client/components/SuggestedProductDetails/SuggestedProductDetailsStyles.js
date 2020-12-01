@@ -40,6 +40,10 @@ const SuggestedProductDetailsStyles = styled.div`
   font-family: 'Helvetica Neue';
   font-size: 15px;
 }
+.centerContent {
+  display: flex;
+  justify-content: center;
+}
 `;
 
 export default SuggestedProductDetailsStyles;

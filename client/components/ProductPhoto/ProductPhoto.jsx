@@ -6,14 +6,12 @@ const ProductPhoto = (props) => {
 
   return (
     <ProductPhotoStyles>
-      <div>
         <NewBanner new={props.product.new}
         size={props.size} />
         <img
         src={props.product.image_url}
         className={props.size + 'Photo'}
         />
-      </div>
     </ProductPhotoStyles>
   );
 

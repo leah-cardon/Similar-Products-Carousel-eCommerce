@@ -15,13 +15,11 @@ const CompositeProductImage = (props) => {
           size='preview'
           product={props.product}
         />
-        <div>
-          <button
-            className='quickLookButton' onClick={() => setIsOpen(true)}
-          >
-            QUICK LOOK
-          </button>
-        </div>
+        <button
+          className='quickLookButton' onClick={() => setIsOpen(true)}
+        >
+          QUICK LOOK
+        </button>
         <QuickLookModal product={props.product} open={isOpen} onClose={() => setIsOpen(false)}></QuickLookModal>
       </div>
     </CompositeProductImageStyles>

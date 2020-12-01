@@ -7,6 +7,7 @@ import IndexStyles from './IndexStyles.js';
 ReactDOM.render(
   <IndexStyles>
     <App />
+    <div id='portal'></div>
   </IndexStyles>
   , document.getElementById('suggested-products')
   );
