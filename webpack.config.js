@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var BrotliPlugin = require('brotli-webpack-plugin');
 
 const SRC_DIR = path.join(__dirname, './client/index.js');
-const PUBLIC_DIR = path.join(__dirname, './public');
+const PUBLIC_DIR = path.join(__dirname, './docs');
 
 module.exports = {
   entry: SRC_DIR,

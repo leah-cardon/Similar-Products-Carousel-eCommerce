@@ -21,7 +21,7 @@ app.get('*.js', (req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../docs')));
 
 
 app.get('/api/products/:id/similar', (req, res) => {
@@ -45,7 +45,7 @@ app.get('/api/products/:id/similar', (req, res) => {
 // });
 
 app.get('/*/:id', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'))
+  res.sendFile(path.join(__dirname, '../docs/index.html'))
 });
 
 app.listen(4444, () => {
