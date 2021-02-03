@@ -59,6 +59,8 @@ npm run build
 - Express.js
 - Styled Components
 - React Hooks
+- HTML5
+- Webpack
 
 ## Related Organization
 
