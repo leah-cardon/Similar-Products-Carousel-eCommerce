@@ -91,7 +91,7 @@ const generateProducts = (quantity) => {
 
   const products = [];
 
-  for (var i = 1; i <= quantity; i++) {
+  while (var i < quantity) {
 
     const product = {
       'id': i,
