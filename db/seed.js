@@ -88,11 +88,11 @@ const get15RandomIds = () => {
 };
 
 const generateProducts = (quantity) => {
-
   const products = [];
+  let i;
 
-  while (var i < quantity) {
-
+  while (products.length < quantity) {
+    i++;
     const product = {
       'id': i,
       'product_id': faker.random.number(),
@@ -115,6 +115,7 @@ const generateProducts = (quantity) => {
     };
     products.push(product);
   }
+
   return products;
 };
 
