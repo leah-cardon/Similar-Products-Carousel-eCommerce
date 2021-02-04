@@ -81,7 +81,7 @@ var generateRandomLengthColorArray = (limit) => {
 
 const get15RandomIds = () => {
   const ids = [];
-  for (var i = 0; i < 15; i++) {
+  while (ids.length <= 15) {
     ids.push(Math.ceil(Math.random() * 100));
   }
   return ids;
