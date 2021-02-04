@@ -7,7 +7,6 @@ const cors = require('cors');
 
 const app = express();
 let port = process.env.PORT || 4444;
-const host = '0.0.0.0';
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -49,6 +48,6 @@ app.get('/*/:id', (req, res) => {
   res.sendFile(path.join(__dirname, '../docs/index.html'))
 });
 
-app.listen(port, host, () => {
-  console.log(`App listening at ${host}:${port});
+app.listen(port, () => {
+  console.log(`App listening at port ${port}`);
 });
