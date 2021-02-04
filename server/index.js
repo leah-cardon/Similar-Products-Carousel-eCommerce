@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const app = express();
 let port = process.env.PORT || 4444;
+const host = 0.0.0.0;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -48,6 +49,6 @@ app.get('/*/:id', (req, res) => {
   res.sendFile(path.join(__dirname, '../docs/index.html'))
 });
 
-app.listen(4444, () => {
-  console.log('App listening at http://localhost:4444');
+app.listen(port, host, () => {
+  console.log(`App listening at ${host}:${port});
 });
