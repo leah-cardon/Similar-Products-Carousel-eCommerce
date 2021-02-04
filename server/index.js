@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const app = express();
 let port = process.env.PORT || 4444;
-const host = 0.0.0.0;
+const host = '0.0.0.0';
 
 app.use(cors());
 app.use(bodyParser.json());

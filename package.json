@@ -6,10 +6,11 @@
   "author": "@leah-cardon",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon ./server/index.js",
+    "start": "node ./server/index.js",
     "seed": "node db/seed.js",
     "build": "webpack",
     "test": "jest",
+    "devstart": "nodemon ./server/index.js",
     "test:watch": "jest --watch"
   },
   "dependencies": {
