@@ -89,7 +89,7 @@ const get15RandomIds = () => {
 
 const generateProducts = (quantity) => {
   const products = [];
-  let i;
+  let i = 0;
 
   while (products.length < quantity) {
     i++;
