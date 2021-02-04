@@ -1,8 +1,7 @@
 
 
 const mongoose = require('mongoose');
-// name db sethora-similar-products
-mongoose.connect('mongodb://127.0.0.1/sethora-similar', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
