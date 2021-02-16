@@ -45,6 +45,11 @@ const CompositeProductImageStyles = styled.div`
     height: 24px;
     padding: 0px;
   }
+  button:focus {
+    outline:none;
+    border:none;
+    box-shadow: none;
+  }
   .lovedSvg {
     display: inline-block;
     width: 1em;
@@ -55,7 +60,7 @@ const CompositeProductImageStyles = styled.div`
     flex-shrink: 0;
     font-size: 20px;
     color: rgb(207, 17, 44);
-    padding: 0;
+    padding: 0px;
   }
   .unlovedSvg {
     display: inline-block;
@@ -67,7 +72,7 @@ const CompositeProductImageStyles = styled.div`
     flex-shrink: 0;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    padding: 0;
+    padding: 0px;
   }
 `;
 
