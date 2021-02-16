@@ -45,7 +45,8 @@ const QuickLookModal = (props) => {
                 <div>{props.product.short_detail}</div>
                 <div className='linkDiv'>
                   <a
-                    href={'/products/' + props.product.id + ''}
+                    // href={'/products/' + props.product.id + ''}
+                    href={'/'}
                     className='seeProductDetailsLink'>
                       See product details
                   </a>

@@ -44,6 +44,7 @@ const CompositeProductImageStyles = styled.div`
     width: 24px;
     height: 24px;
     padding: 0px;
+    cursor: pointer;
   }
   button:focus {
     outline:none;

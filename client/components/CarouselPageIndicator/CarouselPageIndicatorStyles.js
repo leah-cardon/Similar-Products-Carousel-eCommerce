@@ -11,7 +11,6 @@ const CarouselPageIndicatorStyles = styled.div`
     margin-right: 1px;
     line-height: 0;
     font-size: 45px;
-    cursor: pointer;
     opacity: 20%;
   }
   .currentDot {

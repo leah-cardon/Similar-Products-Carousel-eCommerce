@@ -24,6 +24,7 @@ class App extends React.Component {
 
   componentDidMount() {
     var path = window.location.pathname.split('/');
+    console.log(path);
     var id = (path[2] === undefined) ? 2 : path[2];
     axios.get(`/api/products/${id}/similar`)
       .then((result) => result.data)

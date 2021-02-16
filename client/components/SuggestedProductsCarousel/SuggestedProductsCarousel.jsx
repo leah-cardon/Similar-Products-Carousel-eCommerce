@@ -11,7 +11,6 @@ const SuggestedProductsCarousel = (props) => {
     return null;
   }
   const similar = props.similarDisplayed || [];
-console.log(similar);
 
   return (
     <SuggestedProductsCarouselStyles>

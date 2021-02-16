@@ -5,7 +5,9 @@ import ProductPhotoStyles from './ProductPhotoStyles.js';
 const ProductPhoto = (props) => {
 
   return (
-    <ProductPhotoStyles href={'/products/' + props.product.id + ''}>
+    <ProductPhotoStyles
+      // href={'/products/' + props.product.id + ''}
+    >
         <NewBanner new={props.product.new}
         size={props.size} />
         <img

@@ -21,7 +21,6 @@ const QuickLookModalStyles = styled.div`
   outline: 0px;
   font-size: 14px;
   line-height: 1.5;
-  pointer-events: auto;
   border-radius: 6px;
   top: 50%;
   left: 50%;
@@ -56,7 +55,6 @@ const QuickLookModalStyles = styled.div`
   display: block;
 }
 .seeProductDetailsLink {
-  cursor: pointer;
   outline: 0;
   color: #1470f5;
   display: inline-block;

@@ -6,13 +6,13 @@ const CarouselPageIndicator = (props) => {
   return (
     <CarouselPageIndicatorStyles>
       <div className='dotsContainer'>
-        <button className={props.similarPage === 1 ? 'dotButton currentDot' : 'dotButton'}>
+        <button disabled className={props.similarPage === 1 ? 'dotButton currentDot' : 'dotButton'}>
         •
         </button>
-        <button className={props.similarPage === 2 ? 'dotButton currentDot' : 'dotButton'}>
+        <button disabled className={props.similarPage === 2 ? 'dotButton currentDot' : 'dotButton'}>
         •
         </button>
-        <button className={props.similarPage === 3 ? 'dotButton currentDot' : 'dotButton'}>
+        <button disabled className={props.similarPage === 3 ? 'dotButton currentDot' : 'dotButton'}>
         •
         </button>
       </div>
