@@ -67,7 +67,6 @@ class App extends React.Component {
       return allItems.map((item) => {
         if (item && item.id === id) {
           item.loved === true ? item.loved = false : item.loved = true;
-          console.log('loved state changed to: ', item.loved, ' for item ', item.id);
         }
         return item;
       });
