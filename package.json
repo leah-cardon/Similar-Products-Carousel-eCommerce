@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node ./server/index.js",
     "seed": "node db/seed.js",
-    "build": "webpack --watch",
+    "build": "webpack",
     "test": "jest",
     "devstart": "nodemon ./server/index.js",
     "test:watch": "jest --watch"
