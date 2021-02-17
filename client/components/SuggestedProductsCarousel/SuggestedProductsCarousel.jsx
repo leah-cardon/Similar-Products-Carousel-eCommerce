@@ -25,7 +25,9 @@ const SuggestedProductsCarousel = (props) => {
           {
             Array.from(similar).map((item, index) => <SuggestedProduct
               key={index}
-              similarProduct={item} />)
+              similarProduct={item}
+              setLoved={props.setLoved}
+            />)
           }
           <div className='arrowContainer'>
             <RightArrow

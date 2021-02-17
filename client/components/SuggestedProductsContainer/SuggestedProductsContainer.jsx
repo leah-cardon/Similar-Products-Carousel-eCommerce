@@ -12,6 +12,7 @@ const SuggestedProductsContainer = (props) => {
         similarDisplayed={props.similarDisplayed}
         handleArrowClick={props.handleArrowClick}
         similarPage={props.similarPage}
+        setLoved={props.setLoved}
       />
       <SuggestedProductsFooter />
     </div>

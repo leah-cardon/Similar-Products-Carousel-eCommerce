@@ -28,7 +28,7 @@ const productSchema = new mongoose.Schema({
     }
   ],
   'price': Number,
-  'loved': Boolean,
+  'loved': false,
   'loves': Number,
   'stars': Number,
   'review_count': Number,

@@ -20,6 +20,7 @@ class App extends React.Component {
     };
 
     this.handleArrowClick = this.handleArrowClick.bind(this);
+    this.setLoved = this.setLoved.bind(this);
   }
 
   componentDidMount() {
@@ -61,12 +62,31 @@ class App extends React.Component {
     });
   }
 
+  setLoved(itemId) {
+    const lovedUpdater = (allItems, id) => {
+      return allItems.map((item) => {
+        if (item && item.id === id) {
+          item.loved === true ? item.loved = false : item.loved = true;
+          console.log('loved state changed to: ', item.loved, ' for item ', item.id);
+        }
+        return item;
+      });
+    };
+    let updatedProducts = lovedUpdater(this.state.similarProducts, itemId);
+    this.setState(prevState => {
+      return {
+        similarProducts: updatedProducts
+      };
+    });
+  }
+
   render() {
     return (
       <SuggestedProductsContainer
         similarDisplayed={this.state.similarDisplayed}
         handleArrowClick={this.handleArrowClick}
         similarPage={this.state.similarPage}
+        setLoved={this.setLoved}
       />
     )
   };

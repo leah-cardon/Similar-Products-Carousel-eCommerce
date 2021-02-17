@@ -7,7 +7,10 @@ const SuggestedProduct = (props) => {
 
   return (
     <div className='productContainer'>
-      <CompositeProductImage product={props.similarProduct} />
+      <CompositeProductImage
+        product={props.similarProduct}
+        setLoved={props.setLoved}
+      />
       <SuggestedProductDetails product={props.similarProduct} />
     </div>);
 
